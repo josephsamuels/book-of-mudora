@@ -9,6 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // Load application packages.
 import './app.module';
 import './app.styles.css';
+import './main/main.component';
 
+// Attach ng-app to HTML tag.
 $('html').attr('ng-app', 'BookOfMudora');
-$('#app').replaceWith('<nav class="navbar navbar-light bg-light"><a class="navbar-brand" href="#">Hi</a></div>');
+
+// Replace #app with main component.
+$('#app').replaceWith('<main></main>');

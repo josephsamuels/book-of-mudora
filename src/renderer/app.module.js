@@ -1,7 +1,7 @@
-'use strict';
-
 import angular from 'angular';
 
 (() => {
-    angular.module('BookOfMudora', []);
+  'use strict';
+
+  angular.module('BookOfMudora', []);
 })();
