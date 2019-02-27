@@ -1,5 +1,5 @@
 {
-  "name": "electron-webpack-quick-start",
+  "name": "book-of-mudora",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -9,12 +9,16 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
+    "angular": "^1.7.7",
+    "bootstrap": "^4.3.1",
+    "popper.js": "^1.14.7",
     "source-map-support": "^0.5.10"
   },
   "devDependencies": {
     "electron": "4.0.1",
     "electron-builder": "20.38.4",
     "electron-webpack": "^2.6.2",
+    "jquery": "^3.3.1",
     "webpack": "4.28.4"
   }
 }
