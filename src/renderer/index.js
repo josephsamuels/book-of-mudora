@@ -1,17 +1,13 @@
-// Initial welcome page. Delete the following line to remove it.
-'use strict';
-
 // Load vendor packages.
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Load application packages.
-import './app.module';
-import './views/main/main.component';
+import './app';
 
 // Attach ng-app to HTML tag.
-$('html').attr('ng-app', 'BookOfMudora');
+$('html').attr('ng-app', 'app');
 
 // Replace #app with main component.
 $('#app').replaceWith('<main class="container-fluid"></main>');

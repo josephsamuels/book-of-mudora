@@ -1,5 +1,7 @@
 class MainController {
   constructor() {
+    'ngInject';
+
     this.total = 0;
   }
 
@@ -7,4 +9,5 @@ class MainController {
     this.total++;
   }
 }
-export { MainController }
+
+export default MainController;

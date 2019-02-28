@@ -1,1 +1,3 @@
-<button class="item {{ $ctrl.item + '-' + $ctrl.status }}" ng-click="$ctrl.toggleItem()" ng-class="{ 'unavailable': !$ctrl.status }"></button>
+<button class="btn btn-outline-primary" ng-click="$ctrl.toggleItem()">
+  <div class="item {{ $ctrl.type + '-' + $ctrl.level }}" ng-class="{ 'unavailable': !$ctrl.level }"></div>
+</button>
