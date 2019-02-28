@@ -1,4 +1,4 @@
-class ItemController {
+export default class ItemController {
     constructor() {
         'ngInject';
 
@@ -48,5 +48,3 @@ class ItemController {
         this.level = (this.level + 1) % (this.levels + 1);
     }
 }
-
-export default ItemController;
