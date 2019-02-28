@@ -1,7 +1,5 @@
 import angular from 'angular';
 
-(() => {
-  'use strict';
+import './app.styles.css';
 
-  angular.module('BookOfMudora', []);
-})();
+angular.module('BookOfMudora', []);

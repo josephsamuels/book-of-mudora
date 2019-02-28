@@ -1,0 +1,162 @@
+.unavailable {
+    opacity: 0.3;
+}
+
+.item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 64px;
+    width: 64px;
+}
+
+.bomb-0, .bomb-1 {
+    background-image: url('./images/bomb.png');
+}
+
+.bombos-medallion-0, .bombos-medallion-1 {
+    background-image: url('./images/bombos-medallion.png');
+}
+
+.book-of-mudora-0, .book-of-mudora-1 {
+    background-image: url('./images/book-of-mudora.png');
+}
+
+.boomerang-0, .boomerang-1 {
+    background-image: url('./images/boomerang.png');
+}
+
+.bottle-0, .bottle-1 {
+    background-image: url('./images/bottle.png');
+}
+
+.bow-0, .bow-1 {
+    background-image: url('./images/bow.png');
+}
+
+.bug-net-0, .bug-net-1 {
+    background-image: url('./images/bug-net.png');
+}
+
+.cane-byrna-0, .cane-byrna-1 {
+    background-image: url('./images/cane-byrna.png');
+}
+
+.cane-somaria-0, .cane-somaria-1 {
+    background-image: url('./images/cane-somaria.png');
+}
+
+.ether-medallion-0, .ether-medallion-1 {
+    background-image: url('./images/ether-medallion.png');
+}
+
+.flippers-0, .flippers-1 {
+    background-image: url('./images/flippers.png');
+}
+
+.fire-rod-0, .fire-rod-1 {
+    background-image: url('./images/fire-rod.png');
+}
+
+.flute-0, .flute-1 {
+    background-image: url('./images/flute.png');
+}
+
+.gloves-0, .gloves-1 {
+    background-image: url('./images/power-glove.png');
+}
+
+.gloves-2 {
+    background-image: url('./images/titans-mitts.png');
+}
+
+.hookshot-0, .hookshot-1 {
+    background-image: url('./images/hookshot.png');
+}
+
+.ice-rod-0, .ice-rod-1 {
+    background-image: url('./images/ice-rod.png');
+}
+
+.lamp-0, .lamp-1 {
+    background-image: url('./images/lamp.png');
+}
+
+.magic-cape-0, .magic-cape-1 {
+    background-image: url('./images/magic-cape.png');
+}
+
+.magic-hammer-0, .magic-hammer-1 {
+    background-image: url('./images/magic-hammer.png');
+}
+
+.magic-mirror-0, .magic-mirror-1 {
+    background-image: url('./images/magic-mirror.png');
+}
+
+.magic-powder-0, .magic-powder-1 {
+    background-image: url('./images/magic-powder.png');
+}
+
+.magical-boomerang-0, .magical-boomerang-1 {
+    background-image: url('./images/magical-boomerang.png');
+}
+
+.moon-pearl-0, .moon-pearl-1 {
+    background-image: url('./images/moon-pearl.png');
+}
+
+.mushroom-0, .mushroom-1 {
+    background-image: url('./images/mushroom.png');
+}
+
+.pegasus-boots-0, .pegasus-boots-1 {
+    background-image: url('./images/pegasus-boots.png');
+}
+
+.quake-medallion-0, .quake-medallion-1 {
+    background-image: url('./images/quake-medallion.png');
+}
+
+.shield-0, .shield-1 {
+    background-image: url('./images/fighters-shield.png');
+}
+
+.shield-2 {
+    background-image: url('./images/fire-shield.png');
+}
+
+.shield-3 {
+    background-image: url('./images/mirror-shield.png');
+}
+
+.shovel-0, .shovel-1 {
+    background-image: url('./images/shovel.png');
+}
+
+.sword-0, .sword-1 {
+    background-image: url('./images/fighters-sword.png');
+}
+
+.sword-2 {
+    background-image: url('./images/master-sword.png');
+}
+
+.sword-3 {
+    background-image: url('./images/tempered-sword.png');
+}
+
+.sword-4 {
+    background-image: url('./images/golden-sword.png');
+}
+
+.tunic-0, .tunic-1 {
+    background-image: url('./images/green-tunic.png');
+}
+
+.tunic-2 {
+    background-image: url('./images/blue-tunic.png');
+}
+
+.tunic-3 {
+    background-image: url('./images/red-tunic.png')
+}

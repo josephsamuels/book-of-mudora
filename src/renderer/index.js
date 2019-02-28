@@ -8,11 +8,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Load application packages.
 import './app.module';
-import './app.styles.css';
-import './main/main.component';
+import './views/main/main.component';
 
 // Attach ng-app to HTML tag.
 $('html').attr('ng-app', 'BookOfMudora');
 
 // Replace #app with main component.
-$('#app').replaceWith('<main></main>');
+$('#app').replaceWith('<main class="container-fluid"></main>');
