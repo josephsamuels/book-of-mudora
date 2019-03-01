@@ -2,49 +2,49 @@ export default class ItemController {
     constructor() {
         'ngInject';
 
-        this.itemLevels = {
-            'bomb': 1,
-            'bombos-medallion': 1,
-            'book-of-mudora': 1,
-            'boomerang': 1,
-            'bottle': 1,
-            'bow': 1,
-            'bug-net': 1,
-            'cane-byrna': 1,
-            'cane-somaria': 1,
-            'ether-medallion': 1,
-            'flippers': 1,
-            'fire-rod': 1,
-            'flute': 1,
-            'gloves': 2,
-            'hookshot': 1,
-            'ice-rod': 1,
-            'lamp': 1,
-            'magic-cape': 1,
-            'magic-hammer': 1,
-            'magic-mirror': 1,
-            'magic-powder': 1,
-            'magical-boomerang': 1,
-            'moon-pearl': 1,
-            'mushroom': 1,
-            'pegasus-boots': 1,
-            'quake-medallion': 1,
-            'shield': 3,
-            'shovel': 1,
-            'silver-arrows': 1,
-            'tunic': 3,
-            'sword': 4
+        this.items = {
+            'bomb': { steps: 1 },
+            'bombos-medallion': { steps: 1 },
+            'book-of-mudora': { steps: 1 },
+            'boomerang': { steps: 1 },
+            'bottle': { steps: 1 },
+            'bow': { steps: 3 },
+            'bug-net': { steps: 1 },
+            'cane-byrna': { steps: 1 },
+            'cane-somaria': { steps: 1 },
+            'ether-medallion': { steps: 1 },
+            'flippers': { steps: 1 },
+            'fire-rod': { steps: 1 },
+            'flute': { steps: 1 },
+            'gloves': { steps: 2 },
+            'hookshot': { steps: 1 },
+            'ice-rod': { steps: 1 },
+            'lamp': { steps: 1 },
+            'magic-cape': { steps: 1 },
+            'magic-hammer': { steps: 1 },
+            'magic-mirror': { steps: 1 },
+            'magic-powder': { steps: 1 },
+            'magical-boomerang': { steps: 1 },
+            'moon-pearl': { steps: 1 },
+            'mushroom': { steps: 1 },
+            'pegasus-boots': { steps: 1 },
+            'quake-medallion': { steps: 1 },
+            'shield': { steps: 3 },
+            'shovel': { steps: 1 },
+            'tunic': { default: 1, steps: 3 },
+            'sword': { steps: 4 }
         };
-
-        this.level = 0;
-        this.levels = 0;
     }
 
     $onInit() {
-        this.levels = this.itemLevels[this.type];
+        this.level = this.items[this.type].default || 0;
     }
 
     toggleItem() {
-        this.level = (this.level + 1) % (this.levels + 1);
+        this.level = (this.level + 1) % (this.items[this.type].steps + 1);
+
+        if (this.level < this.items[this.type].default) {
+            this.level = this.items[this.type].default;
+        }
     }
 }

@@ -34,7 +34,15 @@ item > .btn {
 }
 
 .bow-0, .bow-1 {
-    background-image: url('./images/bow.png');
+    background-image: url('./images/bow-and-arrow.png');
+}
+
+.bow-2 {
+  background-image: url('./images/silver-arrow.png');
+}
+
+.bow-3 {
+  background-image: url('./images/bow-and-silver-arrow.png');
 }
 
 .bug-net-0, .bug-net-1 {
@@ -135,10 +143,6 @@ item > .btn {
 
 .shovel-0, .shovel-1 {
     background-image: url('./images/shovel.png');
-}
-
-.silver-arrows-0, .silver-arrows-1 {
-    background-image: url('./images/silver-arrows.png');
 }
 
 .sword-0, .sword-1 {
