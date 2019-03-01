@@ -1,3 +1,6 @@
-<button class="btn btn-light" ng-class="{'active': $ctrl.level}" ng-click="$ctrl.toggleItem()">
-  <div class="item {{ $ctrl.type + '-' + $ctrl.level }}" ng-class="{ 'unavailable': !$ctrl.level }"></div>
+<button class="btn btn-light" ng-class="{'active': $ctrl._ItemsService.getItemLevel($ctrl.type)}"
+  ng-click="$ctrl._ItemsService.toggleItemLevel($ctrl.type)">
+  <div class="item {{ $ctrl.type + '-' + $ctrl._ItemsService.getItemLevel($ctrl.type) }}"
+    ng-class="{ 'unavailable': !$ctrl._ItemsService.getItemLevel($ctrl.type) }">
+  </div>
 </button>
