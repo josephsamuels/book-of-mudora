@@ -36,6 +36,11 @@ export default class ItemsService {
     };
   }
 
+  /**
+   * Returns the item's current level.
+   *
+   * @param {string} type The item's type.
+   */
   getItemLevel(type) {
     if (!this.items[type].level) {
       this.items[type].level = this.items[type].min || 0;
@@ -44,7 +49,12 @@ export default class ItemsService {
     return this.items[type].level;
   }
 
-  toggleItemLevel(type) {
+  /**
+   * Increments the item's current level.
+   *
+   * @param {string} type The item's type.
+   */
+  incrementItemLevel(type) {
     this.items[type].level = (this.items[type].level + 1) % (this.items[type].max + 1);
 
     if (this.items[type].level < this.items[type].min) {
