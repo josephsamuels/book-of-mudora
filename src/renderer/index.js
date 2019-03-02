@@ -10,4 +10,4 @@ import './app';
 $('html').attr('ng-app', 'app');
 
 // Replace #app with main component.
-$('#app').replaceWith('<main class="container-fluid"></main>');
+$('#app').replaceWith('<main></main>');

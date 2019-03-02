@@ -10,11 +10,12 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 let mainWindow
 
 function createMainWindow() {
-  const window = new BrowserWindow({ width: 450, height: 390, title: 'Book of Mudora', frame: false, resizable: false });
+  const window = new BrowserWindow({ width: 320, height: 500, title: 'Book of Mudora', frame: false, minWidth: 320, maxWidth: 320 });
 
   if (isDevelopment) {
     window.webContents.openDevTools();
   }
+
 
   if (isDevelopment) {
     window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`);

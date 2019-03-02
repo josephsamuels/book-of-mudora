@@ -3,34 +3,31 @@ export default class ItemsService {
     'ngInject';
 
     this.items = {
-      'bomb': { max: 1 },
-      'bombos-medallion': { max: 1 },
-      'book-of-mudora': { max: 1 },
-      'boomerang': { max: 1 },
-      'bottle': { max: 1 },
+      'bomb': {},
+      'bombos-medallion': {},
+      'book-of-mudora': {},
+      'boomerangs': { max: 3 },
+      'bottle': {},
       'bow': { max: 3 },
-      'bug-net': { max: 1 },
-      'cane-byrna': { max: 1 },
-      'cane-somaria': { max: 1 },
-      'ether-medallion': { max: 1 },
-      'flippers': { max: 1 },
-      'fire-rod': { max: 1 },
-      'flute': { max: 1 },
+      'bug-net': {},
+      'canes': { max: 3 },
+      'ether-medallion': {},
+      'flippers': {},
+      'flute': {},
       'gloves': { max: 2 },
-      'hookshot': { max: 1 },
-      'ice-rod': { max: 1 },
-      'lamp': { max: 1 },
-      'magic-cape': { max: 1 },
-      'magic-hammer': { max: 1 },
-      'magic-mirror': { max: 1 },
-      'magic-powder': { max: 1 },
-      'magical-boomerang': { max: 1 },
-      'moon-pearl': { max: 1 },
-      'mushroom': { max: 1 },
-      'pegasus-boots': { max: 1 },
-      'quake-medallion': { max: 1 },
+      'hookshot': {},
+      'lamp': {},
+      'magic-cape': {},
+      'magic-hammer': {},
+      'magic-mirror': {},
+      'magic-powder': {},
+      'moon-pearl': {},
+      'mushroom': {},
+      'pegasus-boots': {},
+      'quake-medallion': {},
+      'rods': { max: 3 },
       'shield': { max: 3 },
-      'shovel': { max: 1 },
+      'shovel': {},
       'tunic': { min: 1, max: 3 },
       'sword': { max: 4 }
     };
@@ -55,7 +52,7 @@ export default class ItemsService {
    * @param {string} type The item's type.
    */
   incrementItemLevel(type) {
-    this.items[type].level = (this.items[type].level + 1) % (this.items[type].max + 1);
+    this.items[type].level = (this.items[type].level + 1) % ((this.items[type].max || 1) + 1);
 
     if (this.items[type].level < this.items[type].min) {
       this.items[type].level = this.items[type].min;

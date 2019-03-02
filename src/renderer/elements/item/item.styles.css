@@ -1,5 +1,13 @@
+item {
+  float: left;
+}
+
 item > .btn {
+  border: 0;
     border-radius: 0;
+    height: 64px;
+    width: 64px;
+    padding: 0;
 }
 
 .unavailable {
@@ -9,8 +17,7 @@ item > .btn {
 .item {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 64px;
-    width: 64px;
+    height: 100%;
 }
 
 .bomb-0, .bomb-1 {
@@ -18,26 +25,34 @@ item > .btn {
 }
 
 .bombos-medallion-0, .bombos-medallion-1 {
-    background-image: url('./images/bombos-medallion.png');
+    background-image: url('./images/bombos.png');
 }
 
 .book-of-mudora-0, .book-of-mudora-1 {
     background-image: url('./images/book-of-mudora.png');
 }
 
-.boomerang-0, .boomerang-1 {
-    background-image: url('./images/boomerang.png');
+.boomerangs-0, .boomerangs-3 {
+    background-image: url('./images/both-boomerangs.png');
+}
+
+.boomerangs-1 {
+  background-image: url('./images/boomerang.png');
+}
+
+.boomerangs-2 {
+  background-image: url('./images/magical-boomerang.png');
 }
 
 .bottle-0, .bottle-1 {
     background-image: url('./images/bottle.png');
 }
 
-.bow-0, .bow-1 {
+.bow-0, .bow-2 {
     background-image: url('./images/bow-and-arrow.png');
 }
 
-.bow-2 {
+.bow-1 {
   background-image: url('./images/silver-arrow.png');
 }
 
@@ -46,27 +61,31 @@ item > .btn {
 }
 
 .bug-net-0, .bug-net-1 {
-    background-image: url('./images/bug-net.png');
+    background-image: url('./images/bug-catching-net.png');
 }
 
-.cane-byrna-0, .cane-byrna-1 {
-    background-image: url('./images/cane-byrna.png');
+.canes-0 {
+  background-image: url('./images/both-canes.png');
 }
 
-.cane-somaria-0, .cane-somaria-1 {
-    background-image: url('./images/cane-somaria.png');
+.canes-1 {
+  background-image: url('./images/cane-of-byrna.png');
+}
+
+.canes-2 {
+  background-image: url('./images/cane-of-somaria.png');
+}
+
+.canes-3 {
+  background-image: url('./images/both-canes.png');
 }
 
 .ether-medallion-0, .ether-medallion-1 {
-    background-image: url('./images/ether-medallion.png');
+    background-image: url('./images/ether.png');
 }
 
 .flippers-0, .flippers-1 {
-    background-image: url('./images/flippers.png');
-}
-
-.fire-rod-0, .fire-rod-1 {
-    background-image: url('./images/fire-rod.png');
+    background-image: url('./images/zoras-flippers.png');
 }
 
 .flute-0, .flute-1 {
@@ -83,10 +102,6 @@ item > .btn {
 
 .hookshot-0, .hookshot-1 {
     background-image: url('./images/hookshot.png');
-}
-
-.ice-rod-0, .ice-rod-1 {
-    background-image: url('./images/ice-rod.png');
 }
 
 .lamp-0, .lamp-1 {
@@ -126,7 +141,19 @@ item > .btn {
 }
 
 .quake-medallion-0, .quake-medallion-1 {
-    background-image: url('./images/quake-medallion.png');
+    background-image: url('./images/quake.png');
+}
+
+.rods-0, .rods-3 {
+  background-image: url('./images/both-rods.png');
+}
+
+.rods-1 {
+  background-image: url('./images/ice-rod.png');
+}
+
+.rods-2 {
+  background-image: url('./images/fire-rod.png');
 }
 
 .shield-0, .shield-1 {
@@ -134,7 +161,7 @@ item > .btn {
 }
 
 .shield-2 {
-    background-image: url('./images/fire-shield.png');
+    background-image: url('./images/red-shield.png');
 }
 
 .shield-3 {
@@ -146,7 +173,7 @@ item > .btn {
 }
 
 .sword-0, .sword-1 {
-    background-image: url('./images/fighters-sword.png');
+    background-image: url('./images/fighter-sword.png');
 }
 
 .sword-2 {

@@ -1,4 +1,4 @@
-<button class="btn btn-light" ng-class="{'active': $ctrl._ItemsService.getItemLevel($ctrl.type)}"
+<button class="btn btn-secondary" ng-class="{'active': $ctrl._ItemsService.getItemLevel($ctrl.type)}"
   ng-click="$ctrl._ItemsService.incrementItemLevel($ctrl.type)">
   <div class="item {{ $ctrl.type + '-' + $ctrl._ItemsService.getItemLevel($ctrl.type) }}"
     ng-class="{ 'unavailable': !$ctrl._ItemsService.getItemLevel($ctrl.type) }">
