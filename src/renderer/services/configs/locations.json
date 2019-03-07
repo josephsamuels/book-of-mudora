@@ -7,11 +7,49 @@
     "name": "Lost Woods Hideout",
     "items": 1
   },
+  "pedestal": {
+    "name": "Master Sword Pedestal",
+    "items": 1,
+    "requiredToCheck": [
+      {
+        "type": "item",
+        "name": "book"
+      }
+    ],
+    "requiredToGet": [
+      {
+        "type": "prize",
+        "name": "green-pendant"
+      },
+      {
+        "type": "prize",
+        "name": "red-pendant"
+      },
+      {
+        "type": "prize",
+        "name": "blue-pendant"
+      }
+    ]
+  },
+  "kakariko-well": {
+    "name": "Kakariko Well",
+    "items": 4
+  },
+  "back-of-kakariko-well": {
+    "name": "Back of Kakariko Well",
+    "items": 1,
+    "requiredToGet": [{"type": "item", "name": "bomb"}]
+  },
   "library": {
     "name": "Library",
     "items": 1,
     "requiredToCheck": [],
-    "requiredToGet": [{"type": "boots"}]
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "boots"
+      }
+    ]
   },
   "links-house": {
     "name": "Link's House",
@@ -20,12 +58,11 @@
   "mini-moldorm-cave": {
     "name": "Mini-Moldorm Cave",
     "items": 5,
-    "requiredToGet": [{"type": "bomb"}]
-  },
-  "pedestal": {
-    "name": "Master Sword Pedestal",
-    "items": 1,
-    "requiredToCheck": [{"type": "book"}],
-    "requiredToGet": [[[{"type": "book"}], [{"type": "gloves"}]], {"type": "sword"}]
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
   }
 }

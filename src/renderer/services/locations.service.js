@@ -66,9 +66,13 @@ export default class LocationsService {
       return result;
     }
 
-    let level = requirements.level || 1;
+    if (requirements.type === 'item') {
+      let level = requirements.level || 1;
 
-    return this._ItemsService.getItemLevel(requirements.type) >= level;
+      return this._ItemsService.getItemLevel(requirements.name) >= level;
+    }
+
+    return false;
   }
 
   /**
@@ -77,7 +81,16 @@ export default class LocationsService {
    * @param {string} location The location to get the name of.
    */
   getLocationName(location) {
-    return this.locations[location].name
+    return this.locations[location].name;
+  }
+
+  /**
+   * Returns the location's item count.
+   * 
+   * @param {string} location The location to get the item count of.
+   */
+  getLocationItemCount(location) {
+    return this.locations[location].items;
   }
 
   /**
