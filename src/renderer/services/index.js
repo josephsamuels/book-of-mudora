@@ -8,5 +8,8 @@ angular.module('app.services').service('ItemsService', ItemsService);
 import LocationsService from './locations.service';
 angular.module('app.services').service('LocationsService', LocationsService);
 
+import RegionsService from './regions.service';
+angular.module('app.services').service('RegionsService', RegionsService);
+
 import RequirementsService from './requirements.service';
 angular.module('app.services').service('RequirementsService', RequirementsService);

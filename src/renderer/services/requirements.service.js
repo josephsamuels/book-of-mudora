@@ -1,13 +1,16 @@
 import ItemsService from './items.service';
+import RegionsService from './regions.service';
 
 export default class RequirementsService {
   /**
-   * @param {ItemsService} ItemsService
+   * @param {ItemsService}   ItemsService
+   * @param {RegionsService} RegionsService
    */
-  constructor(ItemsService) {
+  constructor(ItemsService, RegionsService) {
     'ngInject';
 
     this._ItemsService = ItemsService;
+    this._RegionsService = RegionsService;
   }
 
   /**
@@ -24,17 +27,13 @@ export default class RequirementsService {
       }
 
       for (let requirement of requirements) {
-        if (Array.isArray(requirement)) {
-          if (result === null) {
-            result = false;
-          }
+        if (result === null) {
+          result = !Array.isArray(requirement);
+        }
 
+        if (Array.isArray(requirement)) {
           result = result || this.checkRequirements(requirement);
         } else {
-          if (result === null) {
-            result = true;
-          }
-
           result = result && this.checkRequirements(requirement);
         }
       }
@@ -91,6 +90,6 @@ export default class RequirementsService {
    * @param {object} requirement The requirement to check.
    */
   checkRegionRequirement(requirement) {
-    return true;
+    return this.checkRequirements(this._RegionsService.getRegionAccessRequirements(requirement.name));
   }
 }

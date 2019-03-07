@@ -1,0 +1,63 @@
+{
+  "death-mountain": {
+    "requiredToAccess": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "flute"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "gloves"
+          }
+        ]
+      ],
+      {
+        "type": "item",
+        "name": "lamp"
+      }
+    ]
+  },
+  "dark-death-mountain": {
+    "requiredToAccess": [
+      {
+        "type": "item",
+        "name": "gloves",
+        "level": 2
+      },
+      {
+        "type": "region",
+        "name": "east-death-mountain"
+      }
+    ]
+  },
+  "east-death-mountain": {
+    "requiredToAccess": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "hookshot"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "mirror"
+          },
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ]
+      ],
+      {
+        "type": "region",
+        "name": "death-mountain"
+      }
+    ]
+  }
+}

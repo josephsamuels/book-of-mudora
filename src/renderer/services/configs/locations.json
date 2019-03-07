@@ -16,6 +16,12 @@
   "bombos-tablet": {
     "name": "Bombos Tablet",
     "items": 1,
+    "requiredToCheck": [
+      {
+        "type": "item",
+        "name": "book"
+      }
+    ],
     "requiredToGet": [
       {
         "type": "item",
@@ -25,6 +31,10 @@
       {
         "type": "item",
         "name": "book"
+      },
+      {
+        "type": "item",
+        "name": "mirror"
       }
     ]
   },
@@ -62,7 +72,12 @@
       },
       {
         "type": "item",
-        "name": "gloves"
+        "name": "gloves",
+        "level": 2
+      },
+      {
+        "type": "item",
+        "name": "flute"
       }
     ]
   },
@@ -90,6 +105,15 @@
         {
           "type": "item",
           "name": "mirror"
+        },
+        {
+          "type": "item",
+          "name": "gloves",
+          "level": 2
+        },
+        {
+          "type": "item",
+          "name": "flute"
         }
       ]
     ]
@@ -289,10 +313,18 @@
     "name": "Maze Race",
     "items": 1,
     "requiredToGet": [
-      {
-        "type": "item",
-        "name": "bomb"
-      }
+      [
+        {
+          "type": "item",
+          "name": "bomb"
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "boots"
+        }
+      ]
     ]
   },
   "mini-moldorm-cave": {
@@ -314,14 +346,20 @@
     "items": 1,
     "requiredToGet": [
       {
-        "type": "item",
-        "name": "lamp"
+        "type": "region",
+        "name": "death-mountain"
       }
     ]
   },
   "paradox-cave": {
     "name": "Paradox Cave",
-    "items": 7
+    "items": 7,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "east-death-mountain"
+      }
+    ]
   },
   "pedestal": {
     "name": "Master Sword Pedestal",
@@ -361,10 +399,18 @@
     "name": "Sahasrahla's Hut",
     "items": 3,
     "requiredToGet": [
-      {
-        "type": "item",
-        "name": "bomb"
-      }
+      [
+        {
+          "type": "item",
+          "name": "bomb"
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "boots"
+        }
+      ]
     ]
   },
   "secret-passage": {
@@ -384,8 +430,17 @@
   "spectacle-rock": {
     "name": "Spectacle Rock",
     "items": 1,
-    "requiredToCheck": [],
+    "requiredToCheck": [
+      {
+        "type": "region",
+        "name": "death-mountain"
+      }
+    ],
     "requiredToGet": [
+      {
+        "type": "region",
+        "name": "death-mountain"
+      },
       {
         "type": "item",
         "name": "mirror"
@@ -394,7 +449,13 @@
   },
   "spectacle-rock-cave": {
     "name": "Spectacle Rock Cave",
-    "items": 1
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "death-mountain"
+      }
+    ]
   },
   "waterfall-fairy": {
     "name": "Waterfall Fairy",
@@ -437,6 +498,14 @@
   "zoras-ledge": {
     "name": "Zora's Ledge",
     "items": 1,
+    "requiredToCheck": [
+      [
+        {
+          "type": "item",
+          "name": "gloves"
+        }
+      ]
+    ],
     "requiredToGet": [
       {
         "type": "item",
