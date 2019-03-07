@@ -10,7 +10,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 let mainWindow
 
 function createMainWindow() {
-  const window = new BrowserWindow({ width: 320, height: 500, title: 'Book of Mudora', frame: false, minWidth: 320, maxWidth: 320 });
+  const window = new BrowserWindow({ width: 320, minWidth: 320, maxWidth: 320, height: 600, minHeight: 376, title: 'Book of Mudora', frame: false });
 
   if (isDevelopment) {
     window.webContents.openDevTools();

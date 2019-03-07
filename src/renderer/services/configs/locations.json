@@ -109,6 +109,21 @@
       }
     ]
   },
+  "floating-island": {
+    "name": "Floating Island",
+    "items": 1,
+    "requiredToCheck": [],
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "mirror"
+      },
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
+  },
   "floodgate": {
     "name": "Floodgate",
     "items": 2
@@ -140,6 +155,21 @@
       {
         "type": "item",
         "name": "flippers"
+      }
+    ]
+  },
+  "hookshot-cave": {
+    "name": "Hookshot Cave",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "hookshot"
+      },
+      {
+        "type": "item",
+        "name": "gloves",
+        "level": 2
       }
     ]
   },
@@ -288,6 +318,10 @@
         "name": "lamp"
       }
     ]
+  },
+  "paradox-cave": {
+    "name": "Paradox Cave",
+    "items": 7
   },
   "pedestal": {
     "name": "Master Sword Pedestal",
