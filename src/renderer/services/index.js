@@ -7,3 +7,6 @@ angular.module('app.services').service('ItemsService', ItemsService);
 
 import LocationsService from './locations.service';
 angular.module('app.services').service('LocationsService', LocationsService);
+
+import RequirementsService from './requirements.service';
+angular.module('app.services').service('RequirementsService', RequirementsService);

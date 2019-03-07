@@ -3,7 +3,7 @@ import LocationsService from '../../services/locations.service';
 export default class LocationController {
 
   /**
-   * @param {LocationsService} LocationsService 
+   * @param {LocationsService} LocationsService
    */
   constructor(LocationsService) {
     'ngInject';
@@ -11,6 +11,9 @@ export default class LocationController {
     this._LocationsService = LocationsService;
   }
 
+  /**
+   * Returns additional CSS classes for the location.
+   */
   getLocationClasses() {
     switch (this._LocationsService.getLocationStatus(this.name)) {
       case 'checked':

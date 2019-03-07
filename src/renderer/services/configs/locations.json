@@ -1,11 +1,293 @@
 {
-  "mushroom": {
-    "name": "Mushroom Location",
+  "aginahs-cave": {
+    "name": "Aginah's Cave",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
+  },
+  "blinds-hideout": {
+    "name": "Blind's Hideout",
+    "items": 5
+  },
+  "bombos-tablet": {
+    "name": "Bombos Tablet",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "sword",
+        "level": 2
+      },
+      {
+        "type": "item",
+        "name": "book"
+      }
+    ]
+  },
+  "bonk-rocks": {
+    "name": "Bonk Rocks",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "boots"
+      }
+    ]
+  },
+  "bottle-merchant": {
+    "name": "Bottle Merchant",
+    "items": 1
+  },
+  "cave-45": {
+    "name": "Cave 45",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "mirror"
+      }
+    ]
+  },
+  "checkerboard-cave": {
+    "name": "Checkerboard Cave",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "mirror"
+      },
+      {
+        "type": "item",
+        "name": "gloves"
+      }
+    ]
+  },
+  "chicken-house": {
+    "name": "Chicken House",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
+  },
+  "desert-ledge": {
+    "name": "Desert Ledge",
+    "items": 1,
+    "requiredToGet": [
+      [
+        {
+          "type": "item",
+          "name": "book"
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "mirror"
+        }
+      ]
+    ]
+  },
+  "ether-tablet": {
+    "name": "Ether Tablet",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "sword",
+        "level": 2
+      },
+      {
+        "type": "item",
+        "name": "book"
+      }
+    ]
+  },
+  "floodgate": {
+    "name": "Floodgate",
+    "items": 2
+  },
+  "flute": {
+    "name": "Flute Location",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "shovel"
+      }
+    ]
+  },
+  "graveyard-ledge": {
+    "name": "Graveyard Ledge",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "mirror"
+      }
+    ]
+  },
+  "hobo": {
+    "name": "Hobo Under Bridge",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "flippers"
+      }
+    ]
+  },
+  "ice-rod-cave": {
+    "name": "Ice Rod Cave",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
+  },
+  "kakariko-tavern": {
+    "name": "Kakariko Tavern",
+    "items": 1
+  },
+  "kakariko-well": {
+    "name": "Kakariko Well",
+    "items": 5
+  },
+  "kings-tomb": {
+    "name": "King's Tomb",
+    "items": 1,
+    "requiredToGet": [
+      [
+        {
+          "type": "item",
+          "name": "gloves",
+          "level": 2
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "mirror"
+        }
+      ],
+      {
+        "type": "item",
+        "name": "boots"
+      }
+    ]
+  },
+  "lake-hylia-island": {
+    "name": "Lake Hylia Island",
+    "items": 1,
+    "requiredToCheck": [],
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "flippers"
+      },
+      {
+        "type": "item",
+        "name": "mirror"
+      }
+    ]
+  },
+  "library": {
+    "name": "Library",
+    "items": 1,
+    "requiredToCheck": [],
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "boots"
+      }
+    ]
+  },
+  "links-house": {
+    "name": "Link's House",
     "items": 1
   },
   "lost-woods-hideout": {
     "name": "Lost Woods Hideout",
     "items": 1
+  },
+  "lumberjack-tree": {
+    "name": "Lumberjack Tree",
+    "items": 1,
+    "requiredToCheck": [],
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "boots"
+      },
+      {
+        "type": "boss",
+        "name": "agahnim"
+      }
+    ]
+  },
+  "magic-bat": {
+    "name": "Magic Bat",
+    "items": 1,
+    "requiredToGet": [
+      [
+        {
+          "type": "item",
+          "name": "hammer"
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "mirror"
+        }
+      ],
+      {
+        "type": "item",
+        "name": "powder"
+      }
+    ]
+  },
+  "maze-race": {
+    "name": "Maze Race",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
+  },
+  "mini-moldorm-cave": {
+    "name": "Mini-Moldorm Cave",
+    "items": 5,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
+  },
+  "mushroom": {
+    "name": "Mushroom Location",
+    "items": 1
+  },
+  "old-man": {
+    "name": "Old Man",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "lamp"
+      }
+    ]
   },
   "pedestal": {
     "name": "Master Sword Pedestal",
@@ -31,37 +313,100 @@
       }
     ]
   },
-  "kakariko-well": {
-    "name": "Kakariko Well",
-    "items": 4
-  },
-  "back-of-kakariko-well": {
-    "name": "Back of Kakariko Well",
+  "sahasrahla": {
+    "name": "Sahasrahla",
     "items": 1,
-    "requiredToGet": [{"type": "item", "name": "bomb"}]
+    "requiredToGet": [
+      {
+        "type": "prize",
+        "name": "green-pendant"
+      }
+    ]
   },
-  "library": {
-    "name": "Library",
+  "sahasrahlas-hut": {
+    "name": "Sahasrahla's Hut",
+    "items": 3,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
+  },
+  "secret-passage": {
+    "name": "Secret Passage",
+    "items": 2
+  },
+  "sick-kid": {
+    "name": "Sick Kid",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "bottle"
+      }
+    ]
+  },
+  "spectacle-rock": {
+    "name": "Spectacle Rock",
     "items": 1,
     "requiredToCheck": [],
     "requiredToGet": [
       {
         "type": "item",
-        "name": "boots"
+        "name": "mirror"
       }
     ]
   },
-  "links-house": {
-    "name": "Link's House",
+  "spectacle-rock-cave": {
+    "name": "Spectacle Rock Cave",
     "items": 1
   },
-  "mini-moldorm-cave": {
-    "name": "Mini-Moldorm Cave",
-    "items": 5,
+  "waterfall-fairy": {
+    "name": "Waterfall Fairy",
+    "items": 2,
     "requiredToGet": [
       {
         "type": "item",
-        "name": "bomb"
+        "name": "flippers"
+      }
+    ]
+  },
+  "witchs-hut": {
+    "name": "Witch's Hut",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "mushroom"
+      }
+    ]
+  },
+  "zora": {
+    "name": "King Zora",
+    "items": 1,
+    "requiredToGet": [
+      [
+        {
+          "type": "item",
+          "name": "flippers"
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "gloves"
+        }
+      ]
+    ]
+  },
+  "zoras-ledge": {
+    "name": "Zora's Ledge",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "flippers"
       }
     ]
   }
