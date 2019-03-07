@@ -1,0 +1,9 @@
+<button class="btn btn-block {{ $ctrl.getLocationClasses() }}"
+  ng-click="$ctrl._LocationsService.toggleLocationCheckedStatus($ctrl.name)">
+  <span class="float-left">
+    {{ $ctrl._LocationsService.getLocationName($ctrl.name) }}
+  </span>
+  <span class="float-right">
+
+  </span>
+</button>

@@ -1,0 +1,31 @@
+{
+  "mushroom": {
+    "name": "Mushroom Location",
+    "items": 1
+  },
+  "lost-woods-hideout": {
+    "name": "Lost Woods Hideout",
+    "items": 1
+  },
+  "library": {
+    "name": "Library",
+    "items": 1,
+    "requiredToCheck": [],
+    "requiredToGet": [{"type": "boots"}]
+  },
+  "links-house": {
+    "name": "Link's House",
+    "items": 1
+  },
+  "mini-moldorm-cave": {
+    "name": "Mini-Moldorm Cave",
+    "items": 5,
+    "requiredToGet": [{"type": "bomb"}]
+  },
+  "pedestal": {
+    "name": "Master Sword Pedestal",
+    "items": 1,
+    "requiredToCheck": [{"type": "book"}],
+    "requiredToGet": [[[{"type": "book"}], [{"type": "gloves"}]], {"type": "sword"}]
+  }
+}
