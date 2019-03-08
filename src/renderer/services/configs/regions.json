@@ -22,13 +22,17 @@
   "dark-death-mountain": {
     "requiredToAccess": [
       {
+        "type": "region",
+        "name": "east-death-mountain"
+      },
+      {
+        "type": "item",
+        "name": "moon-pearl"
+      },
+      {
         "type": "item",
         "name": "gloves",
         "level": 2
-      },
-      {
-        "type": "region",
-        "name": "east-death-mountain"
       }
     ]
   },
@@ -81,9 +85,15 @@
           "name": "flippers"
         }
       ],
+      [
+        {
+          "type": "boss",
+          "name": "agahnim"
+        }
+      ],
       {
-        "type": "boss",
-        "name": "agahnim"
+        "type": "item",
+        "name": "moon-pearl"
       }
     ]
   },
@@ -97,6 +107,22 @@
         "type": "item",
         "name": "gloves",
         "level": 2
+      }
+    ]
+  },
+  "south-dark-world": {
+    "requiredToAccess": [
+      {
+        "type": "item",
+        "name": "moon-pearl"
+      },
+      {
+        "type": "item",
+        "name": "gloves"
+      },
+      {
+        "type": "item",
+        "name": "hammer"
       }
     ]
   },

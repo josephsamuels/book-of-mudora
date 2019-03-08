@@ -74,16 +74,6 @@
       }
     ]
   },
-  "cave-45": {
-    "name": "Cave 45",
-    "items": 1,
-    "requiredToGet": [
-      {
-        "type": "item",
-        "name": "mirror"
-      }
-    ]
-  },
   "checkerboard-cave": {
     "name": "Checkerboard Cave",
     "items": 1,
@@ -178,8 +168,8 @@
     "name": "Floodgate",
     "items": 2
   },
-  "flute": {
-    "name": "Flute Location",
+  "flute-spot": {
+    "name": "Flute Spot",
     "items": 1,
     "requiredToGet": [
       {
@@ -265,6 +255,10 @@
         {
           "type": "item",
           "name": "mirror"
+        },
+        {
+          "type": "region",
+          "name": "west-dark-world"
         }
       ],
       {
@@ -351,6 +345,30 @@
       }
     ]
   },
+  "master-sword-pedestal": {
+    "name": "Master Sword Pedestal",
+    "items": 1,
+    "requiredToCheck": [
+      {
+        "type": "item",
+        "name": "book"
+      }
+    ],
+    "requiredToGet": [
+      {
+        "type": "prize",
+        "name": "pendant-wisdom"
+      },
+      {
+        "type": "prize",
+        "name": "pendant-power"
+      },
+      {
+        "type": "prize",
+        "name": "pendant-courage"
+      }
+    ]
+  },
   "maze-race": {
     "name": "Maze Race",
     "items": 1,
@@ -417,27 +435,13 @@
       }
     ]
   },
-  "master-sword-pedestal": {
-    "name": "Master Sword Pedestal",
+  "potion-shop": {
+    "name": "Potion Shop",
     "items": 1,
-    "requiredToCheck": [
-      {
-        "type": "item",
-        "name": "book"
-      }
-    ],
     "requiredToGet": [
       {
-        "type": "prize",
-        "name": "pendant-wisdom"
-      },
-      {
-        "type": "prize",
-        "name": "pendant-power"
-      },
-      {
-        "type": "prize",
-        "name": "pendant-courage"
+        "type": "item",
+        "name": "mushroom"
       }
     ]
   },
@@ -483,6 +487,16 @@
       }
     ]
   },
+  "south-of-grove": {
+    "name": "South of Grove",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "mirror"
+      }
+    ]
+  },
   "spectacle-rock": {
     "name": "Spectacle Rock",
     "items": 1,
@@ -518,8 +532,13 @@
     "items": "2",
     "requiredToGet": [
       {
+        "type": "item",
+        "name": "gloves",
+        "level": 2
+      },
+      {
         "type": "region",
-        "name": "dark-death-mountain"
+        "name": "east-death-mountain"
       }
     ]
   },
@@ -530,16 +549,6 @@
       {
         "type": "item",
         "name": "flippers"
-      }
-    ]
-  },
-  "witchs-hut": {
-    "name": "Witch's Hut",
-    "items": 1,
-    "requiredToGet": [
-      {
-        "type": "item",
-        "name": "mushroom"
       }
     ]
   },
