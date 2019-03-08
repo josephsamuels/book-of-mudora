@@ -63,6 +63,10 @@ export default class LocationsService {
     return this.locations[location].name;
   }
 
+  getLocationNotes(location) {
+    return this.locations[location].additionalRequirements;
+  }
+
   /**
    * Toggle the locations checked status.
    *

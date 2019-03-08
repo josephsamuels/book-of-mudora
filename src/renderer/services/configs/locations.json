@@ -11,7 +11,8 @@
   },
   "blinds-hideout": {
     "name": "Blind's Hideout",
-    "items": 5
+    "items": 5,
+    "additionalRequirements": "1 item requires {bomb}"
   },
   "bombos-tablet": {
     "name": "Bombos Tablet",
@@ -38,8 +39,8 @@
       }
     ]
   },
-  "bonk-rocks": {
-    "name": "Bonk Rocks",
+  "pegasus-rocks": {
+    "name": "Pegasus Rocks",
     "items": 1,
     "requiredToGet": [
       {
@@ -50,7 +51,28 @@
   },
   "bottle-merchant": {
     "name": "Bottle Merchant",
-    "items": 1
+    "items": 1,
+    "additionalRequirements": "100 Rupees"
+  },
+  "bumper-cave": {
+    "name": "Bumper Cave",
+    "items": "1",
+    "requiredToCheck": [
+      {
+        "type": "region",
+        "name": "west-dark-world"
+      }
+    ],
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "west-dark-world"
+      },
+      {
+        "type": "item",
+        "name": "cape"
+      }
+    ]
   },
   "cave-45": {
     "name": "Cave 45",
@@ -107,13 +129,8 @@
           "name": "mirror"
         },
         {
-          "type": "item",
-          "name": "gloves",
-          "level": 2
-        },
-        {
-          "type": "item",
-          "name": "flute"
+          "type": "region",
+          "name": "misery-mire"
         }
       ]
     ]
@@ -136,8 +153,17 @@
   "floating-island": {
     "name": "Floating Island",
     "items": 1,
-    "requiredToCheck": [],
+    "requiredToCheck": [
+      {
+        "type": "region",
+        "name": "east-death-mountain"
+      }
+    ],
     "requiredToGet": [
+      {
+        "type": "region",
+        "name": "east-death-mountain"
+      },
       {
         "type": "item",
         "name": "mirror"
@@ -169,6 +195,14 @@
       {
         "type": "item",
         "name": "mirror"
+      },
+      {
+        "type": "item",
+        "name": "bomb"
+      },
+      {
+        "type": "region",
+        "name": "west-dark-world"
       }
     ]
   },
@@ -213,7 +247,8 @@
   },
   "kakariko-well": {
     "name": "Kakariko Well",
-    "items": 5
+    "items": 5,
+    "additionalRequirements": "1 item requires {bomb}"
   },
   "kings-tomb": {
     "name": "King's Tomb",
@@ -298,10 +333,17 @@
         }
       ],
       [
-        {
-          "type": "item",
-          "name": "mirror"
-        }
+        [
+          {
+            "type": "item",
+            "name": "mirror"
+          },
+          {
+            "type": "item",
+            "name": "gloves",
+            "level": 2
+          }
+        ]
       ],
       {
         "type": "item",
@@ -345,9 +387,23 @@
     "name": "Old Man",
     "items": 1,
     "requiredToGet": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "flute"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "gloves"
+          }
+        ]
+      ],
       {
-        "type": "region",
-        "name": "death-mountain"
+        "type": "item",
+        "name": "lamp"
       }
     ]
   },
@@ -361,7 +417,7 @@
       }
     ]
   },
-  "pedestal": {
+  "master-sword-pedestal": {
     "name": "Master Sword Pedestal",
     "items": 1,
     "requiredToCheck": [
@@ -373,15 +429,15 @@
     "requiredToGet": [
       {
         "type": "prize",
-        "name": "green-pendant"
+        "name": "pendant-wisdom"
       },
       {
         "type": "prize",
-        "name": "red-pendant"
+        "name": "pendant-power"
       },
       {
         "type": "prize",
-        "name": "blue-pendant"
+        "name": "pendant-courage"
       }
     ]
   },
@@ -454,6 +510,16 @@
       {
         "type": "region",
         "name": "death-mountain"
+      }
+    ]
+  },
+  "superbunny-cave": {
+    "name": "Superbunny Cave",
+    "items": "2",
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "dark-death-mountain"
       }
     ]
   },

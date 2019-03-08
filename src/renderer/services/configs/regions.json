@@ -2,23 +2,21 @@
   "death-mountain": {
     "requiredToAccess": [
       [
-        [
-          {
-            "type": "item",
-            "name": "flute"
-          }
-        ],
-        [
-          {
-            "type": "item",
-            "name": "gloves"
-          }
-        ]
+        {
+          "type": "item",
+          "name": "lamp"
+        },
+        {
+          "type": "item",
+          "name": "gloves"
+        }
       ],
-      {
-        "type": "item",
-        "name": "lamp"
-      }
+      [
+        {
+          "type": "item",
+          "name": "flute"
+        }
+      ]
     ]
   },
   "dark-death-mountain": {
@@ -58,6 +56,99 @@
         "type": "region",
         "name": "death-mountain"
       }
+    ]
+  },
+  "east-dark-world": {
+    "requiredToAccess": [
+      [
+        {
+          "type": "item",
+          "name": "gloves"
+        },
+        {
+          "type": "item",
+          "name": "hammer"
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "gloves",
+          "level": 2
+        },
+        {
+          "type": "item",
+          "name": "flippers"
+        }
+      ],
+      {
+        "type": "boss",
+        "name": "agahnim"
+      }
+    ]
+  },
+  "misery-mire": {
+    "requiredToAccess": [
+      {
+        "type": "item",
+        "name": "flute"
+      },
+      {
+        "type": "item",
+        "name": "gloves",
+        "level": 2
+      }
+    ]
+  },
+  "west-dark-world": {
+    "requiredToAccess": [
+      [
+        {
+          "type": "item",
+          "name": "gloves"
+        },
+        {
+          "type": "item",
+          "name": "hammer"
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "gloves",
+          "level": 2
+        }
+      ],
+      [
+        [
+          [
+            {
+              "type": "item",
+              "name": "hammer"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "gloves"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "flippers"
+            }
+          ]
+        ],
+        {
+          "type": "boss",
+          "name": "agahnim"
+        },
+        {
+          "type": "item",
+          "name": "hookshot"
+        }
+      ]
     ]
   }
 }
