@@ -1,35 +1,10 @@
 import locations from './configs/locations.json';
-import RequirementsService from './requirements.service';
 
 export default class LocationsService {
-  /**
-   * @param {RequirementsService} RequirementsService
-   */
-  constructor(RequirementsService) {
+  constructor() {
     'ngInject';
 
     this.locations = locations;
-    this._RequirementsService = RequirementsService;
-  }
-
-  /**
-   * Returns the location's current checked status.
-   *
-   * @param {string} location The identifier of the location to get the checked status of.
-   *
-   * @returns {string}
-   */
-  getLocationStatus(location) {
-    if (this.locations[location].checked) {
-      return 'checked';
-    }
-
-    if (this.locations[location].requiredToGet) {
-      return this._RequirementsService.checkRequirements(this.locations[location].requiredToGet) ? 'can-acquire' :
-        (this.locations[location].requiredToCheck && this._RequirementsService.checkRequirements(this.locations[location].requiredToCheck)) ? 'can-check' : 'unavailable';
-    }
-
-    return 'can-acquire';
   }
 
   /**
@@ -39,6 +14,17 @@ export default class LocationsService {
    */
   getLocations() {
     return this.locations;
+  }
+
+  /**
+   * Returns the location's checked status.
+   * 
+   * @param {string} location The location to get the checked status of.
+   * 
+   * @returns {boolean}
+   */
+  getLocationCheckedStatus(location) {
+    return !!this.locations[location].checked;
   }
 
   /**
@@ -63,8 +49,23 @@ export default class LocationsService {
     return this.locations[location].name;
   }
 
+  /**
+   * Returns the location's additional requirement notes.
+   * 
+   * @param {string} location The location to get notes from.
+   * 
+   * @returns {string}
+   */
   getLocationNotes(location) {
     return this.locations[location].additionalRequirements;
+  }
+
+  getLocationCheckRequirements(location) {
+    return this.locations[location].requiredToCheck;
+  }
+
+  getLocationGetRequirements(location) {
+    return this.locations[location].requiredToGet;
   }
 
   /**

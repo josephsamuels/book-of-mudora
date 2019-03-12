@@ -2,6 +2,9 @@ import angular from 'angular';
 
 angular.module('app.services', []);
 
+import DungeonsService from './dungeons.service';
+angular.module('app.services').service('DungeonsService', DungeonsService);
+
 import ItemsService from './items.service';
 angular.module('app.services').service('ItemsService', ItemsService);
 

@@ -2,13 +2,17 @@
   "bomb": {
     "min": 1
   },
-  "bombos-medallion": {},
+  "bombos": {
+    "max": 4
+  },
   "book": {},
   "boomerangs": {
     "max": 3
   },
   "boots": {},
-  "bottle": {},
+  "bottle": {
+    "max": 4
+  },
   "bow": {
     "max": 3
   },
@@ -16,7 +20,9 @@
   "canes": {
     "max": 3
   },
-  "ether-medallion": {},
+  "ether": {
+    "max": 4
+  },
   "flippers": {},
   "flute": {},
   "gloves": {
@@ -30,7 +36,9 @@
   "powder": {},
   "moon-pearl": {},
   "mushroom": {},
-  "quake-medallion": {},
+  "quake": {
+    "max": 4
+  },
   "rods": {
     "max": 3
   },

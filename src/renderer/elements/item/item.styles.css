@@ -1,7 +1,17 @@
+item {
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+
 item>.btn {
-  height: 64px;
-  width: 64px;
+  height: 100%;
+  width: 100%;
   padding: 0;
+}
+
+item .level {
+  width: 16px;
 }
 
 .unavailable {
@@ -18,7 +28,7 @@ item>.btn {
   background-image: url('./images/bomb.png');
 }
 
-.bombos-medallion-0, .bombos-medallion-1 {
+.bombos-0, .bombos-1, .bombos-2, .bombos-3, .bombos-4 {
   background-image: url('./images/bombos.png');
 }
 
@@ -38,7 +48,7 @@ item>.btn {
   background-image: url('./images/magical-boomerang.png');
 }
 
-.bottle-0, .bottle-1 {
+.bottle-0, .bottle-1, .bottle-2, .bottle-3, .bottle-4 {
   background-image: url('./images/bottle.png');
 }
 
@@ -74,7 +84,7 @@ item>.btn {
   background-image: url('./images/both-canes.png');
 }
 
-.ether-medallion-0, .ether-medallion-1 {
+.ether-0, .ether-1, .ether-2, .ether-3, .ether-4 {
   background-image: url('./images/ether.png');
 }
 
@@ -134,7 +144,7 @@ item>.btn {
   background-image: url('./images/pegasus-boots.png');
 }
 
-.quake-medallion-0, .quake-medallion-1 {
+.quake-0, .quake-1, .quake-2, .quake-3, .quake-4 {
   background-image: url('./images/quake.png');
 }
 

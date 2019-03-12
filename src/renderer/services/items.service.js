@@ -20,6 +20,10 @@ export default class ItemsService {
     return this.items[type].level;
   }
 
+  getItemMaxLevel(type) {
+    return this.items[type].max || 1;
+  }
+
   /**
    * Increments the item's current level.
    *

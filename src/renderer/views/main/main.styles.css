@@ -8,3 +8,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.sub {
+  padding: 5px;
+}

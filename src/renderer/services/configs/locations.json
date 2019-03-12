@@ -9,6 +9,21 @@
       }
     ]
   },
+  "blacksmith": {
+    "name": "Blacksmith",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "east-dark-world"
+      },
+      {
+        "type": "item",
+        "name": "gloves",
+        "level": 2
+      }
+    ]
+  },
   "blinds-hideout": {
     "name": "Blind's Hideout",
     "items": 5,
@@ -19,11 +34,23 @@
     "items": 1,
     "requiredToCheck": [
       {
+        "type": "region",
+        "name": "south-dark-world"
+      },
+      {
         "type": "item",
         "name": "book"
+      },
+      {
+        "type": "item",
+        "name": "mirror"
       }
     ],
     "requiredToGet": [
+      {
+        "type": "region",
+        "name": "south-dark-world"
+      },
       {
         "type": "item",
         "name": "sword",
@@ -39,24 +66,28 @@
       }
     ]
   },
-  "pegasus-rocks": {
-    "name": "Pegasus Rocks",
-    "items": 1,
-    "requiredToGet": [
-      {
-        "type": "item",
-        "name": "boots"
-      }
-    ]
-  },
   "bottle-merchant": {
     "name": "Bottle Merchant",
     "items": 1,
     "additionalRequirements": "100 Rupees"
   },
+  "brewery": {
+    "name": "Brewery",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "west-dark-world"
+      },
+      {
+        "type": "item",
+        "name": "bomb"
+      }
+    ]
+  },
   "bumper-cave": {
     "name": "Bumper Cave",
-    "items": "1",
+    "items": 1,
     "requiredToCheck": [
       {
         "type": "region",
@@ -74,6 +105,30 @@
       }
     ]
   },
+  "c-shaped-house": {
+    "name": "C-Shaped House",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "west-dark-world"
+      }
+    ]
+  },
+  "catfish": {
+    "name": "Catfish",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "east-dark-world"
+      },
+      {
+        "type": "item",
+        "name": "gloves"
+      }
+    ]
+  },
   "checkerboard-cave": {
     "name": "Checkerboard Cave",
     "items": 1,
@@ -84,12 +139,23 @@
       },
       {
         "type": "item",
-        "name": "gloves",
-        "level": 2
+        "name": "flute"
       },
       {
         "type": "item",
-        "name": "flute"
+        "name": "gloves",
+        "level": 2
+      }
+    ]
+  },
+  "chest-game": {
+    "name": "Chest Game",
+    "items": 1,
+    "additionalRequirements": "30 Rupees",
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "west-dark-world"
       }
     ]
   },
@@ -119,16 +185,140 @@
           "name": "mirror"
         },
         {
-          "type": "region",
-          "name": "misery-mire"
+          "type": "item",
+          "name": "flute"
+        },
+        {
+          "type": "item",
+          "name": "gloves",
+          "level": 2
         }
+      ]
+    ]
+  },
+  "digging-game": {
+    "name": "Digging Game",
+    "items": 1,
+    "additionalRequirements": "80 Rupees",
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "south-dark-world"
+      }
+    ]
+  },
+  "escape-dark-cross": {
+    "name": "Escape Dark Cross",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "lamp"
+      }
+    ]
+  },
+  "escape-dungeon": {
+    "name": "Escape Dungeon",
+    "items": 3
+  },
+  "escape-sewer": {
+    "name": "Escape Sewer",
+    "items": 3,
+    "requiredToGet": [
+      [
+        [
+          [
+            {
+              "type": "item",
+              "name": "lamp"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "gloves"
+            }
+          ],
+          {
+            "type": "item",
+            "name": "bomb"
+          }
+        ],
+        [
+          [
+            {
+              "type": "item",
+              "name": "lamp"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "gloves"
+            }
+          ],
+          {
+            "type": "item",
+            "name": "boots"
+          }
+        ]
       ]
     ]
   },
   "ether-tablet": {
     "name": "Ether Tablet",
     "items": 1,
+    "requiredToCheck": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "mirror"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "hookshot"
+          },
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ]
+      ],
+      {
+        "type": "region",
+        "name": "death-mountain"
+      },
+      {
+        "type": "item",
+        "name": "book"
+      }
+    ],
     "requiredToGet": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "mirror"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "hookshot"
+          },
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ]
+      ],
+      {
+        "type": "region",
+        "name": "death-mountain"
+      },
       {
         "type": "item",
         "name": "sword",
@@ -152,7 +342,7 @@
     "requiredToGet": [
       {
         "type": "region",
-        "name": "east-death-mountain"
+        "name": "dark-death-mountain"
       },
       {
         "type": "item",
@@ -196,6 +386,25 @@
       }
     ]
   },
+  "hammer-pegs": {
+    "name": "Hammer Pegs",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "west-dark-world"
+      },
+      {
+        "type": "item",
+        "name": "gloves",
+        "level": 2
+      },
+      {
+        "type": "item",
+        "name": "hammer"
+      }
+    ]
+  },
   "hobo": {
     "name": "Hobo Under Bridge",
     "items": 1,
@@ -206,18 +415,55 @@
       }
     ]
   },
-  "hookshot-cave": {
-    "name": "Hookshot Cave",
+  "hookshot-cave-bottom": {
+    "name": "Hookshot Cave (Bottom)",
     "items": 1,
     "requiredToGet": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "hookshot"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "boots"
+          }
+        ]
+      ],
       {
-        "type": "item",
-        "name": "hookshot"
+        "type": "region",
+        "name": "dark-death-mountain"
+      }
+    ]
+  },
+  "hookshot-cave-rest": {
+    "name": "Hookshot Cave (Rest)",
+    "items": 3,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "dark-death-mountain"
       },
       {
         "type": "item",
-        "name": "gloves",
-        "level": 2
+        "name": "hookshot"
+      }
+    ]
+  },
+  "hype-cave": {
+    "name": "Hype Cave",
+    "items": 5,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "south-dark-world"
+      },
+      {
+        "type": "item",
+        "name": "bomb"
       }
     ]
   },
@@ -272,6 +518,10 @@
     "items": 1,
     "requiredToCheck": [],
     "requiredToGet": [
+      {
+        "type": "region",
+        "name": "south-dark-world"
+      },
       {
         "type": "item",
         "name": "flippers"
@@ -357,15 +607,12 @@
     "requiredToGet": [
       {
         "type": "prize",
-        "name": "pendant-wisdom"
+        "name": "pendant-plus"
       },
       {
         "type": "prize",
-        "name": "pendant-power"
-      },
-      {
-        "type": "prize",
-        "name": "pendant-courage"
+        "name": "pendant",
+        "count": 2
       }
     ]
   },
@@ -387,6 +634,20 @@
       ]
     ]
   },
+  "mimic-cave": {
+    "name": "Mimic Cave",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "dungeon",
+        "name": "turtle-rock"
+      },
+      {
+        "type": "item",
+        "name": "mirror"
+      }
+    ]
+  },
   "mini-moldorm-cave": {
     "name": "Mini-Moldorm Cave",
     "items": 5,
@@ -396,6 +657,14 @@
         "name": "bomb"
       }
     ]
+  },
+  "mire-shed": {
+    "name": "Mire Shed",
+    "items": 2,
+    "requiredToGet": {
+      "type": "region",
+      "name": "misery-mire"
+    }
   },
   "mushroom": {
     "name": "Mushroom Location",
@@ -435,6 +704,16 @@
       }
     ]
   },
+  "pegasus-rocks": {
+    "name": "Pegasus Rocks",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "item",
+        "name": "boots"
+      }
+    ]
+  },
   "potion-shop": {
     "name": "Potion Shop",
     "items": 1,
@@ -442,6 +721,67 @@
       {
         "type": "item",
         "name": "mushroom"
+      }
+    ]
+  },
+  "purple-chest": {
+    "name": "Purple Chest",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "location",
+        "name": "blacksmith"
+      }
+    ]
+  },
+  "pyramid": {
+    "name": "Pyramid",
+    "items": 1,
+    "requiredToGet": [
+      [
+        {
+          "type": "boss",
+          "name": "agahnim"
+        }
+      ],
+      [
+        {
+          "type": "region",
+          "name": "east-dark-world"
+        }
+      ]
+    ]
+  },
+  "pyramid-fairy": {
+    "name": "Pyramid Fairy",
+    "items": 2,
+    "requiredToGet": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ],
+        [
+          {
+            "type": "boss",
+            "name": "agahnim"
+          },
+          {
+            "type": "item",
+            "name": "mirror"
+          }
+        ]
+      ],
+      {
+        "type": "prize",
+        "name": "crystal-plus",
+        "count": 2
+      },
+      {
+        "type": "region",
+        "name": "south-dark-world"
       }
     ]
   },
@@ -492,6 +832,10 @@
     "items": 1,
     "requiredToGet": [
       {
+        "type": "region",
+        "name": "south-dark-world"
+      },
+      {
         "type": "item",
         "name": "mirror"
       }
@@ -527,9 +871,65 @@
       }
     ]
   },
+  "spike-cave": {
+    "name": "Spike Cave",
+    "items": 1,
+    "requiredToGet": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "cape"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "canes",
+            "level": [
+              1,
+              3
+            ]
+          }
+        ]
+      ],
+      {
+        "type": "region",
+        "name": "death-mountain"
+      },
+      {
+        "type": "item",
+        "name": "hammer"
+      },
+      {
+        "type": "item",
+        "name": "gloves"
+      }
+    ]
+  },
+  "spiral-cave": {
+    "name": "Spiral Cave",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "east-death-mountain"
+      }
+    ]
+  },
+  "stumpy": {
+    "name": "Stumpy",
+    "items": 1,
+    "requiredToGet": [
+      {
+        "type": "region",
+        "name": "south-dark-world"
+      }
+    ]
+  },
   "superbunny-cave": {
     "name": "Superbunny Cave",
-    "items": "2",
+    "items": 2,
     "requiredToGet": [
       {
         "type": "item",

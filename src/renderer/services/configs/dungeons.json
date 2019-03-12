@@ -1,0 +1,419 @@
+{
+  "eastern-palace": {
+    "label": "EP",
+    "maxItems": 3,
+    "requiredToClear": [
+      {
+        "type": "item",
+        "name": "lamp"
+      },
+      {
+        "type": "item",
+        "name": "bow",
+        "level": 2
+      }
+    ]
+  },
+  "desert-palace": {
+    "label": "DP",
+    "maxItems": 2,
+    "requiredToAccess": [
+      [
+        {
+          "type": "item",
+          "name": "book"
+        }
+      ],
+      [
+        {
+          "type": "item",
+          "name": "mirror"
+        },
+        {
+          "type": "item",
+          "name": "flute"
+        },
+        {
+          "type": "item",
+          "name": "gloves",
+          "level": 2
+        }
+      ]
+    ],
+    "requiredToClear": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "lamp"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "rods",
+            "level": 2
+          }
+        ]
+      ],
+      {
+        "type": "item",
+        "name": "boots"
+      }
+    ]
+  },
+  "ice-palace": {
+    "label": "IP",
+    "maxItems": 3,
+    "requiredToAccess": [
+      [
+        {
+          "type": "item",
+          "name": "bombos"
+        },
+        {
+          "type": "item",
+          "name": "rods",
+          "level": 2
+        }
+      ],
+      {
+        "type": "item",
+        "name": "moon-pearl"
+      },
+      {
+        "type": "item",
+        "name": "flippers"
+      },
+      {
+        "type": "item",
+        "name": "gloves",
+        "level": 2
+      }
+    ],
+    "requiredToClear": [
+      {
+        "type": "item",
+        "name": "hammer"
+      }
+    ]
+  },
+  "misery-mire": {
+    "label": "MM",
+    "maxItems": 2,
+    "requiredToAccess": [
+      [
+        [
+          [
+            {
+              "type": "item",
+              "name": "hookshot"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "boots"
+            }
+          ],
+          {
+            "type": "item",
+            "name": "bombos",
+            "level": [
+              2,
+              4
+            ]
+          }
+        ],
+        [
+          [
+            {
+              "type": "item",
+              "name": "hookshot"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "boots"
+            }
+          ],
+          {
+            "type": "item",
+            "name": "ether",
+            "level": [
+              2,
+              4
+            ]
+          }
+        ],
+        [
+          [
+            {
+              "type": "item",
+              "name": "hookshot"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "boots"
+            }
+          ],
+          {
+            "type": "item",
+            "name": "quake",
+            "level": [
+              2,
+              4
+            ]
+          }
+        ]
+      ],
+      {
+        "type": "region",
+        "name": "misery-mire"
+      },
+      {
+        "type": "item",
+        "name": "sword"
+      }
+    ],
+    "requiredToClear": [
+      {
+        "type": "item",
+        "name": "canes",
+        "level": 2
+      },
+      {
+        "type": "item",
+        "name": "lamp"
+      }
+    ]
+  },
+  "palace-of-darkness": {
+    "label": "PD",
+    "maxItems": 5,
+    "requiredToAccess": {
+      "type": "region",
+      "name": "east-dark-world"
+    },
+    "requiredToClear": [
+      {
+        "type": "item",
+        "name": "bomb"
+      },
+      {
+        "type": "item",
+        "name": "bow"
+      },
+      {
+        "type": "item",
+        "name": "lamp"
+      },
+      {
+        "type": "item",
+        "name": "hammer"
+      }
+    ]
+  },
+  "swamp-palace": {
+    "label": "SP",
+    "maxItems": 6,
+    "requiredToAccess": [
+      {
+        "type": "region",
+        "name": "south-dark-world"
+      },
+      {
+        "type": "item",
+        "name": "mirror"
+      },
+      {
+        "type": "item",
+        "name": "flippers"
+      }
+    ],
+    "requiredToClear": [
+      {
+        "type": "item",
+        "name": "bomb"
+      },
+      {
+        "type": "item",
+        "name": "hammer"
+      },
+      {
+        "type": "item",
+        "name": "hookshot"
+      }
+    ]
+  },
+  "skull-woods": {
+    "label": "SW",
+    "maxItems": 2,
+    "requiredToAccess": {
+      "type": "region",
+      "name": "west-dark-world"
+    },
+    "requiredToClear": [
+      {
+        "type": "item",
+        "name": "bomb"
+      },
+      {
+        "type": "item",
+        "name": "rods",
+        "level": 2
+      },
+      {
+        "type": "item",
+        "name": "sword"
+      }
+    ]
+  },
+  "thieves-town": {
+    "label": "TT",
+    "maxItems": 4,
+    "requiredToAccess": {
+      "type": "region",
+      "name": "west-dark-world"
+    },
+    "requiredToClear": {
+      "type": "item",
+      "name": "hammer"
+    }
+  },
+  "tower-of-hera": {
+    "label": "TH",
+    "maxItems": 2,
+    "requiredToAccess": [
+      {
+        "type": "region",
+        "name": "death-mountain"
+      }
+    ],
+    "requiredToClear": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "lamp"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "rods",
+            "level": 2
+          }
+        ],
+        {
+          "type": "item",
+          "name": "sword"
+        }
+      ],
+      [
+        [
+          {
+            "type": "item",
+            "name": "lamp"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "rods",
+            "level": 2
+          }
+        ],
+        {
+          "type": "item",
+          "name": "hammer"
+        }
+      ]
+    ]
+  },
+  "turtle-rock": {
+    "label": "TR",
+    "maxItems": 5,
+    "requiredToAccess": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "bombos",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "ether",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "quake",
+            "level": 3
+          }
+        ]
+      ],
+      {
+        "type": "region",
+        "name": "dark-death-mountain"
+      },
+      {
+        "type": "item",
+        "name": "hammer"
+      },
+      {
+        "type": "item",
+        "name": "sword"
+      },
+      {
+        "type": "item",
+        "name": "canes",
+        "level": 2
+      }
+    ],
+    "requiredToClear": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "cape"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "canes",
+            "level": [
+              1,
+              3
+            ]
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "shield",
+            "level": 3
+          }
+        ]
+      ],
+      {
+        "type": "item",
+        "name": "rods",
+        "level": 3
+      },
+      {
+        "type": "item",
+        "name": "lamp"
+      }
+    ]
+  }
+}

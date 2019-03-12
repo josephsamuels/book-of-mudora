@@ -36,32 +36,6 @@
       }
     ]
   },
-  "east-death-mountain": {
-    "requiredToAccess": [
-      [
-        [
-          {
-            "type": "item",
-            "name": "hookshot"
-          }
-        ],
-        [
-          {
-            "type": "item",
-            "name": "mirror"
-          },
-          {
-            "type": "item",
-            "name": "hammer"
-          }
-        ]
-      ],
-      {
-        "type": "region",
-        "name": "death-mountain"
-      }
-    ]
-  },
   "east-dark-world": {
     "requiredToAccess": [
       [
@@ -97,6 +71,32 @@
       }
     ]
   },
+  "east-death-mountain": {
+    "requiredToAccess": [
+      [
+        [
+          {
+            "type": "item",
+            "name": "hookshot"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "mirror"
+          },
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ]
+      ],
+      {
+        "type": "region",
+        "name": "death-mountain"
+      }
+    ]
+  },
   "misery-mire": {
     "requiredToAccess": [
       {
@@ -107,22 +107,68 @@
         "type": "item",
         "name": "gloves",
         "level": 2
+      },
+      {
+        "type": "item",
+        "name": "moon-pearl"
       }
     ]
   },
   "south-dark-world": {
     "requiredToAccess": [
+      [
+        {
+          "type": "item",
+          "name": "gloves"
+        },
+        {
+          "type": "item",
+          "name": "hammer"
+        }
+      ],
+      [
+        [
+          [
+            {
+              "type": " item",
+              "name": "hammer"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "gloves"
+            }
+          ],
+          [
+            {
+              "type": "item",
+              "name": "flippers"
+            }
+          ]
+        ],
+        {
+          "type": "boss",
+          "name": "agahnim"
+        },
+        {
+          "type": "item",
+          "name": "hookshot"
+        }
+      ],
+      [
+        {
+          "type": "boss",
+          "name": "agahnim"
+        },
+        {
+          "type": "item",
+          "name": "hammer"
+        }
+      ],
       {
         "type": "item",
         "name": "moon-pearl"
-      },
-      {
-        "type": "item",
-        "name": "gloves"
-      },
-      {
-        "type": "item",
-        "name": "hammer"
       }
     ]
   },
@@ -174,7 +220,11 @@
           "type": "item",
           "name": "hookshot"
         }
-      ]
+      ],
+      {
+        "type": "item",
+        "name": "moon-pearl"
+      }
     ]
   }
 }

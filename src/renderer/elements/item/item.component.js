@@ -4,7 +4,9 @@ import './item.styles.css';
 
 export default {
   bindings: {
-    type: '@'
+    type: '@',
+    isMedallion: '<',
+    showLevel: '<'
   },
   controller: ItemController,
   template: template
