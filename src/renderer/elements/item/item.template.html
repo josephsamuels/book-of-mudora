@@ -5,11 +5,11 @@
     ng-class="{ 'unavailable': !$ctrl._ItemsService.getItemLevel($ctrl.type) }">
     <div class="mt-auto w-100">
       <div ng-if="$ctrl.isMedallion && [2, 4].indexOf($ctrl._ItemsService.getItemLevel($ctrl.type)) > -1"
-        class="border float-left border-secondary bg-dark">MM</div>
+        class="badge badge-dark float-left w-50">MM</div>
       <div ng-if="$ctrl.isMedallion && $ctrl._ItemsService.getItemLevel($ctrl.type) >= 3"
-        class="border float-right border-secondary bg-dark">TR</div>
+        class="badge badge-dark float-right w-50">TR</div>
     </div>
-    <div ng-if="$ctrl.showLevel" class="level border border-secondary bg-dark">
+    <div ng-if="$ctrl.showLevel" class="badge badge-dark">
       {{ $ctrl._ItemsService.getItemLevel($ctrl.type) }}
     </div>
   </div>

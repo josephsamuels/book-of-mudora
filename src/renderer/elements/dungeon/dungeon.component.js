@@ -4,7 +4,7 @@ import './dungeon.styles.css';
 
 export default {
   bindings: {
-    type: '@'
+    name: '@'
   },
   controller: DungeonController,
   template: template

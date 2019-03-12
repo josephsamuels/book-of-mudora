@@ -3,7 +3,7 @@ html, body {
   background-color: black;
 }
 
-.btn {
+.btn, .badge {
   box-shadow: none !important;
   border: 0;
   border-radius: 0;

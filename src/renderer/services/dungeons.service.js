@@ -11,7 +11,7 @@ export default class DungeonsService {
    * Returns the dungeon's access requirements.
    *
    * @param {string} dungeon The dungeon's key.
-   * 
+   *
    * @returns {array|object}
    */
   getDungeonAccessRequirements(dungeon) {
@@ -20,24 +20,31 @@ export default class DungeonsService {
 
   /**
    * Returns the dungeon's clear requirements.
-   * 
+   *
    * @param {string} dungeon The dungeon's key.
-   * 
+   *
    * @returns {array|object}
    */
   getDungeonClearRequirements(dungeon) {
     return this.dungeons[dungeon].requiredToClear;
   }
 
+  /**
+   * Returns the dungeon's cleared status.
+   *
+   * @param {string} dungeon The dungeon's key.
+   *
+   * @returns {boolean}
+   */
   getDungeonCleared(dungeon) {
     return !!this.dungeons[dungeon].cleared;
   }
 
   /**
    * Return the dungeon's item count.
-   * 
+   *
    * @param {string} dungeon The dungeon's key.
-   * 
+   *
    * @returns {array|object}
    */
   getDungeonItemCount(dungeon) {
@@ -48,10 +55,24 @@ export default class DungeonsService {
     return this.dungeons[dungeon].items;
   }
 
+  /**
+   * Returns the dungeon's label.
+   *
+   * @param {string} dungeon The dungeon's key.
+   *
+   * @returns {string}
+   */
   getDungeonLabel(dungeon) {
     return this.dungeons[dungeon].label;
   }
 
+  /**
+   * Returns the dungeon's prize.
+   *
+   * @param {string} dungeon The dungeon's key.
+   *
+   * @returns {string}
+   */
   getDungeonPrize(dungeon) {
     if (!this.dungeons[dungeon].prize) {
       this.dungeons[dungeon].prize = 1;
@@ -60,6 +81,11 @@ export default class DungeonsService {
     return this.dungeons[dungeon].prize;
   }
 
+  /**
+   * Decrements the dungeon's item count.
+   *
+   * @param {string} dungeon The dungeon's key.
+   */
   decrementItemCount(dungeon) {
     this.dungeons[dungeon].items--;
 
@@ -68,6 +94,11 @@ export default class DungeonsService {
     }
   }
 
+  /**
+   * Toggles the dungeon's clear status.
+   *
+   * @param {string} dungeon The dungeon's key.
+   */
   toggleDungeonCleared(dungeon) {
     this.dungeons[dungeon].cleared = !!!this.dungeons[dungeon].cleared;
   }

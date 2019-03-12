@@ -192,7 +192,7 @@
     ]
   },
   "palace-of-darkness": {
-    "label": "PD",
+    "label": "PoD",
     "maxItems": 5,
     "requiredToAccess": {
       "type": "region",
@@ -285,7 +285,7 @@
     }
   },
   "tower-of-hera": {
-    "label": "TH",
+    "label": "ToH",
     "maxItems": 2,
     "requiredToAccess": [
       {
