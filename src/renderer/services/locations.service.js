@@ -60,6 +60,10 @@ export default class LocationsService {
     return this.locations[location].additionalRequirements;
   }
 
+  /**
+   * 
+   * @param {*} location 
+   */
   getLocationCheckRequirements(location) {
     return this.locations[location].requiredToCheck;
   }

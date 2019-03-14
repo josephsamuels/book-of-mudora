@@ -25,9 +25,9 @@ export default class LocationController {
     if (this._LocationsService.getLocationGetRequirements(this.name)) {
       return this._RequirementsService.checkRequirements(
         this._LocationsService.getLocationGetRequirements(this.name)
-        ) ? 'btn-success' :
-        (this._LocationsService.getLocationCheckRequirements(this.name) && 
-        this._RequirementsService.checkRequirements(this._LocationsService.getLocationCheckRequirements(this.name))) ? 'btn-warning' : 'btn-danger';
+      ) ? 'btn-success' :
+        (this._LocationsService.getLocationCheckRequirements(this.name) &&
+          this._RequirementsService.checkRequirements(this._LocationsService.getLocationCheckRequirements(this.name))) ? 'btn-warning' : 'btn-danger';
     }
 
     return 'btn-success';

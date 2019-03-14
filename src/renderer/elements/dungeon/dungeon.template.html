@@ -1,11 +1,10 @@
 <div class="d-flex flex-column">
-  <div role="button" class="flex-fill btn btn-sm {{ $ctrl.getDungeonClasses() }}"
+  <div role="button" class="flex-fill btn btn-sm {{ $ctrl.getDungeonClearClasses() }}"
     ng-click="$ctrl._DungeonsService.toggleDungeonCleared($ctrl.name)">
     {{ $ctrl._DungeonsService.getDungeonLabel($ctrl.name) }}
   </div>
   <div class="d-flex">
-    <div role="button" class="btn btn-primary btn-sm w-50"
-      ng-class="{'btn-secondary': $ctrl._DungeonsService.getDungeonItemCount($ctrl.name) === 0}"
+    <div role="button" class="btn btn-sm w-50 {{ $ctrl.getDungeonAccessClasses() }}"
       ng-click="$ctrl._DungeonsService.decrementItemCount($ctrl.name)">
       {{ $ctrl._DungeonsService.getDungeonItemCount($ctrl.name) }}</div>
     <div role="button" class="btn btn-primary btn-sm w-50">

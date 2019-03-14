@@ -7,7 +7,7 @@ item {
 item>.btn {
   height: 100%;
   width: 100%;
-  padding: 0;
+  padding: 4px;
 }
 
 item .level {

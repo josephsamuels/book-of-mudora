@@ -15,7 +15,7 @@ export default class DungeonsService {
    * @returns {array|object}
    */
   getDungeonAccessRequirements(dungeon) {
-    return this.dungeons[dungeon].requiredToAccess;
+    return this.dungeons[dungeon].requiredToAccess || [];
   }
 
   /**

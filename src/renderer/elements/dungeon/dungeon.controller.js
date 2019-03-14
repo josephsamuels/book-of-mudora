@@ -14,9 +14,34 @@ export default class DungeonController {
     this._RequirementsService = RequirementsService;
   }
 
-  getDungeonClasses() {
+  getDungeonAccessClasses() {
+    if (this._DungeonsService.getDungeonItemCount(this.name) === 0) {
+      return 'btn-secondary disabled';
+    }
+
+    if (this._DungeonsService.getDungeonClearRequirements(this.name)) {
+      return this._RequirementsService.checkRequirements(
+        this._DungeonsService.getDungeonAccessRequirements(this.name)
+
+      ) ? 'btn-warning' :
+        (this._DungeonsService.getDungeonClearRequirements(this.name) &&
+          this._RequirementsService.checkRequirements(this._DungeonsService.getDungeonAccessRequirements(this.name))) ? 'btn-success' : 'btn-danger';
+    }
+
+    return 'btn-success';
+  }
+
+  getDungeonClearClasses() {
     if (this._DungeonsService.getDungeonCleared(this.name)) {
       return 'btn-secondary disabled';
+    }
+
+    if (this._DungeonsService.getDungeonClearRequirements(this.name)) {
+      return this._RequirementsService.checkRequirements(
+        this._DungeonsService.getDungeonAccessRequirements(this.name)
+      ) && this._RequirementsService.checkRequirements(
+        this._DungeonsService.getDungeonClearRequirements(this.name)
+      ) ? 'btn-success' : 'btn-danger'
     }
 
     return 'btn-success';

@@ -39,31 +39,33 @@
   "east-dark-world": {
     "requiredToAccess": [
       [
-        {
-          "type": "item",
-          "name": "gloves"
-        },
-        {
-          "type": "item",
-          "name": "hammer"
-        }
-      ],
-      [
-        {
-          "type": "item",
-          "name": "gloves",
-          "level": 2
-        },
-        {
-          "type": "item",
-          "name": "flippers"
-        }
-      ],
-      [
-        {
-          "type": "boss",
-          "name": "agahnim"
-        }
+        [
+          {
+            "type": "boss",
+            "name": "agahnim"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "gloves"
+          },
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "gloves",
+            "level": 2
+          },
+          {
+            "type": "item",
+            "name": "flippers"
+          }
+        ]
       ],
       {
         "type": "item",
@@ -117,54 +119,63 @@
   "south-dark-world": {
     "requiredToAccess": [
       [
-        {
-          "type": "item",
-          "name": "gloves"
-        },
-        {
-          "type": "item",
-          "name": "hammer"
-        }
-      ],
-      [
         [
           [
-            {
-              "type": " item",
-              "name": "hammer"
-            }
+            [
+              {
+                "type": "item",
+                "name": "hammer"
+              }
+            ],
+            [
+              {
+                "type": "item",
+                "name": "gloves"
+              }
+            ],
+            [
+              {
+                "type": "item",
+                "name": "flippers"
+              }
+            ]
           ],
-          [
-            {
-              "type": "item",
-              "name": "gloves"
-            }
-          ],
-          [
-            {
-              "type": "item",
-              "name": "flippers"
-            }
-          ]
+          {
+            "type": "boss",
+            "name": "agahnim"
+          },
+          {
+            "type": "item",
+            "name": "hookshot"
+          }
         ],
-        {
-          "type": "boss",
-          "name": "agahnim"
-        },
-        {
-          "type": "item",
-          "name": "hookshot"
-        }
-      ],
-      [
-        {
-          "type": "boss",
-          "name": "agahnim"
-        },
-        {
-          "type": "item",
-          "name": "hammer"
-        }
+        [
+          {
+            "type": "item",
+            "name": "gloves"
+          },
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ],
+        [
+          {
+            "type": "boss",
+            "name": "agahnim"
+          },
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "gloves",
+            "level": 2
+          }
+        ]
       ],
       {
         "type": "item",
@@ -175,51 +186,53 @@
   "west-dark-world": {
     "requiredToAccess": [
       [
-        {
-          "type": "item",
-          "name": "gloves"
-        },
-        {
-          "type": "item",
-          "name": "hammer"
-        }
-      ],
-      [
-        {
-          "type": "item",
-          "name": "gloves",
-          "level": 2
-        }
-      ],
-      [
         [
           [
-            {
-              "type": "item",
-              "name": "hammer"
-            }
+            [
+              {
+                "type": "item",
+                "name": "hammer"
+              }
+            ],
+            [
+              {
+                "type": "item",
+                "name": "gloves"
+              }
+            ],
+            [
+              {
+                "type": "item",
+                "name": "flippers"
+              }
+            ]
           ],
-          [
-            {
-              "type": "item",
-              "name": "gloves"
-            }
-          ],
-          [
-            {
-              "type": "item",
-              "name": "flippers"
-            }
-          ]
+          {
+            "type": "boss",
+            "name": "agahnim"
+          },
+          {
+            "type": "item",
+            "name": "hookshot"
+          }
         ],
-        {
-          "type": "boss",
-          "name": "agahnim"
-        },
-        {
-          "type": "item",
-          "name": "hookshot"
-        }
+        [
+          {
+            "type": "item",
+            "name": "gloves"
+          },
+          {
+            "type": "item",
+            "name": "hammer"
+          }
+        ],
+        [
+          {
+            "type": "item",
+            "name": "gloves",
+            "level": 2
+          }
+        ]
       ],
       {
         "type": "item",

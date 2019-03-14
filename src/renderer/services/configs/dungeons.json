@@ -288,10 +288,26 @@
     "label": "ToH",
     "maxItems": 2,
     "requiredToAccess": [
-      {
-        "type": "region",
-        "name": "death-mountain"
-      }
+      [
+        {
+          "type": "region",
+          "name": "death-mountain"
+        },
+        {
+          "type": "item",
+          "name": "mirror"
+        }
+      ],
+      [
+        {
+          "type": "region",
+          "name": "east-death-mountain"
+        },
+        {
+          "type": "item",
+          "name": "hammer"
+        }
+      ]
     ],
     "requiredToClear": [
       [
@@ -391,10 +407,7 @@
           {
             "type": "item",
             "name": "canes",
-            "level": [
-              1,
-              3
-            ]
+            "level": 2
           }
         ],
         [
