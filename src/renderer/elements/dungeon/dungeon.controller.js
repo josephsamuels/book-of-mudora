@@ -19,14 +19,14 @@ export default class DungeonController {
       return 'btn-secondary disabled';
     }
 
-    if (this._DungeonsService.getDungeonClearRequirements(this.name)) {
-      return this._RequirementsService.checkRequirements(
-        this._DungeonsService.getDungeonAccessRequirements(this.name)
+    // if (this._DungeonsService.getDungeonClearRequirements(this.name)) {
+    //   return this._RequirementsService.checkRequirements(
+    //     this._DungeonsService.getDungeonAccessRequirements(this.name)
 
-      ) ? 'btn-warning' :
-        (this._DungeonsService.getDungeonClearRequirements(this.name) &&
-          this._RequirementsService.checkRequirements(this._DungeonsService.getDungeonAccessRequirements(this.name))) ? 'btn-success' : 'btn-danger';
-    }
+    //   ) ? 'btn-warning' :
+    //     (this._DungeonsService.getDungeonClearRequirements(this.name) &&
+    //       this._RequirementsService.checkRequirements(this._DungeonsService.getDungeonAccessRequirements(this.name))) ? 'btn-success' : 'btn-danger';
+    // }
 
     return 'btn-success';
   }
@@ -36,13 +36,13 @@ export default class DungeonController {
       return 'btn-secondary disabled';
     }
 
-    if (this._DungeonsService.getDungeonClearRequirements(this.name)) {
-      return this._RequirementsService.checkRequirements(
-        this._DungeonsService.getDungeonAccessRequirements(this.name)
-      ) && this._RequirementsService.checkRequirements(
-        this._DungeonsService.getDungeonClearRequirements(this.name)
-      ) ? 'btn-success' : 'btn-danger'
-    }
+    // if (this._DungeonsService.getDungeonClearRequirements(this.name)) {
+    //   return this._RequirementsService.checkRequirements(
+    //     this._DungeonsService.getDungeonAccessRequirements(this.name)
+    //   ) && this._RequirementsService.checkRequirements(
+    //     this._DungeonsService.getDungeonClearRequirements(this.name)
+    //   ) ? 'btn-success' : 'btn-danger'
+    // }
 
     return 'btn-success';
   }
