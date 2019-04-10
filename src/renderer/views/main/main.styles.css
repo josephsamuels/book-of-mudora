@@ -1,6 +1,13 @@
-.navbar {
+body {
   -webkit-user-select: none;
+}
+
+.navbar {
   -webkit-app-region: drag;
+}
+
+button {
+  -webkit-app-region: no-drag;
 }
 
 main {
@@ -11,4 +18,8 @@ main {
 
 .sub {
   padding: 5px;
+}
+
+.navbar {
+  padding: 8px;
 }
