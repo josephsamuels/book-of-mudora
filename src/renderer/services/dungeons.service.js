@@ -2,8 +2,6 @@ import dungeons from './configs/dungeons';
 
 export default class DungeonsService {
   constructor() {
-    'ngInject';
-
     this.dungeons = dungeons;
   }
 

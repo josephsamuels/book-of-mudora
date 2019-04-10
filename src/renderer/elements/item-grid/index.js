@@ -1,3 +1,6 @@
-import itemGrid from './item-grid.component';
+import template from './item-grid.template.html';
+import './item-grid.styles.css';
 
-export default itemGrid;
+export default {
+  template: template
+};

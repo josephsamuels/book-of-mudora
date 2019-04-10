@@ -2,8 +2,6 @@ import items from './configs/items.json';
 
 export default class ItemsService {
   constructor() {
-    'ngInject';
-
     this.items = items;
   }
 

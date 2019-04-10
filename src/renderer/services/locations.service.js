@@ -2,8 +2,6 @@ import locations from './configs/locations.json';
 
 export default class LocationsService {
   constructor() {
-    'ngInject';
-
     this.locations = locations;
   }
 

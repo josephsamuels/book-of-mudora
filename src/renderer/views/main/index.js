@@ -1,3 +1,8 @@
-import main from './main.component';
+import MainController from './main.controller';
+import template from './main.template.html';
+import './main.styles.css';
 
-export default main;
+export default {
+  controller: MainController,
+  template: template
+};

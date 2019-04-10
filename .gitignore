@@ -1,4 +1,6 @@
 .DS_Store
+book-of-mudora.app/
+build/
 dist/
 node_modules/
 thumbs.db

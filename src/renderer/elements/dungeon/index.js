@@ -1,3 +1,11 @@
-import dungeon from './dungeon.component';
+import DungeonController from './dungeon.controller';
+import template from './dungeon.template.html';
+import './dungeon.styles.css';
 
-export default dungeon;
+export default {
+  bindings: {
+    name: '@'
+  },
+  controller: DungeonController,
+  template: template
+};
