@@ -1,4 +1,7 @@
 export default class MainController {
-  constructor() {
+  constructor(RemoteService) {
+    this._RemoteService = RemoteService;
   }
 }
+
+MainController.$inject = ['RemoteService']

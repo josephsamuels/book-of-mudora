@@ -13,3 +13,6 @@ angular.module('app.services').service('LocationsService', LocationsService);
 
 import RegionsService from './regions.service';
 angular.module('app.services').service('RegionsService', RegionsService);
+
+import RemoteService from './remote.service';
+angular.module('app.services').service('RemoteService', RemoteService);
