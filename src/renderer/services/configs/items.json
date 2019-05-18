@@ -2,9 +2,7 @@
   "bomb": {
     "min": 1
   },
-  "bombos": {
-    "max": 4
-  },
+  "bombos": {},
   "book": {},
   "boomerangs": {
     "max": 3
@@ -20,9 +18,7 @@
   "canes": {
     "max": 3
   },
-  "ether": {
-    "max": 4
-  },
+  "ether": {},
   "flippers": {},
   "flute": {},
   "gloves": {
@@ -36,9 +32,7 @@
   "powder": {},
   "moon-pearl": {},
   "mushroom": {},
-  "quake": {
-    "max": 4
-  },
+  "quake": {},
   "rods": {
     "max": 3
   },

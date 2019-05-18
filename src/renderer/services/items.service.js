@@ -6,6 +6,19 @@ export default class ItemsService {
   }
 
   /**
+   * Returns the item's dungeon requirement value.
+   * 
+   * @param {string} type The item's type.
+   */
+  getItemDungeonRequirement(type) {
+    if (!this.items[type].dungeon) {
+      this.items[type].dungeon = 0;
+    }
+
+    return this.items[type].dungeon;
+  }
+
+  /**
    * Returns the item's current level.
    *
    * @param {string} type The item's type.
@@ -16,10 +29,6 @@ export default class ItemsService {
     }
 
     return this.items[type].level;
-  }
-
-  getItemMaxLevel(type) {
-    return this.items[type].max || 1;
   }
 
   /**
@@ -33,5 +42,14 @@ export default class ItemsService {
     if (this.items[type].level < this.items[type].min) {
       this.items[type].level = this.items[type].min;
     }
+  }
+
+  /**
+   * Increments the item's dungeon requirement value.
+   * 
+   * @param {string} type The item's type.
+   */
+  incrementDungeonRequirement(type) {
+    this.items[type].dungeon = (this.items[type].dungeon + 1) % 4;
   }
 }

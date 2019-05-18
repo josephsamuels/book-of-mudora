@@ -73,7 +73,7 @@ export default class DungeonsService {
    */
   getDungeonPrize(dungeon) {
     if (!this.dungeons[dungeon].prize) {
-      this.dungeons[dungeon].prize = 1;
+      this.dungeons[dungeon].prize = 0;
     }
 
     return this.dungeons[dungeon].prize;
@@ -99,5 +99,9 @@ export default class DungeonsService {
    */
   toggleDungeonCleared(dungeon) {
     this.dungeons[dungeon].cleared = !!!this.dungeons[dungeon].cleared;
+  }
+
+  incrementDungeonPrize(dungeon) {
+    this.dungeons[dungeon].prize = (this.dungeons[dungeon].prize + 1) % 5;
   }
 }

@@ -23,3 +23,11 @@ main {
 .navbar {
   padding: 8px;
 }
+
+.btn-close {
+  opacity: 0;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
