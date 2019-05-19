@@ -3,9 +3,14 @@
     <img src="./images/book-of-mudora.png" width="32" height="32" class="d-inline-block align-top">
     Book of Mudora
   </span>
-  <button type="button" class="btn btn-danger btn-close" ng-click="$ctrl._RemoteService.close()">
-    <i class="fas fa-times"></i>
-  </button>
+  <div class="btn-group">
+    <button type="button" class="btn btn-success btn-control" ng-click="$ctrl.resetAll()">
+      <i class="fas fa-redo"></i>
+    </button>
+    <button type="button" class="btn btn-danger btn-control" ng-click="$ctrl._RemoteService.close()">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
 </nav>
 <item-grid></item-grid>
 <div class="sub text-light bg-dark border-top border-bottom border-dark">Dungeons</div>

@@ -1,8 +1,15 @@
+import angular from 'angular';
 import items from './configs/items.json';
 
 export default class ItemsService {
-  constructor() {
-    this.items = items;
+  constructor(localStorageService) {
+    this._localStorageService = localStorageService;
+
+    this.items = angular.copy(items);
+
+    if (this._localStorageService.get('items')) {
+      this.items = this._localStorageService.get('items');
+    }
   }
 
   /**
@@ -42,6 +49,8 @@ export default class ItemsService {
     if (this.items[type].level < this.items[type].min) {
       this.items[type].level = this.items[type].min;
     }
+
+    this.save();
   }
 
   /**
@@ -51,5 +60,22 @@ export default class ItemsService {
    */
   incrementDungeonRequirement(type) {
     this.items[type].dungeon = (this.items[type].dungeon + 1) % 4;
+
+    this.save();
+  }
+
+  /**
+   * Reset items to default.
+   */
+  reset() {
+    this.items = angular.copy(items);
+
+    this.save();
+  }
+
+  save() {
+    this._localStorageService.set('items', this.items);
   }
 }
+
+ItemsService.$inject = ['localStorageService'];

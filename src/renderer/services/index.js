@@ -1,18 +1,19 @@
+// Load vendor packages.
 import angular from 'angular';
+import 'angular-local-storage';
 
-angular.module('app.services', []);
-
+// Load module packages.
 import DungeonsService from './dungeons.service';
-angular.module('app.services').service('DungeonsService', DungeonsService);
-
 import ItemsService from './items.service';
-angular.module('app.services').service('ItemsService', ItemsService);
-
 import LocationsService from './locations.service';
-angular.module('app.services').service('LocationsService', LocationsService);
-
 import RegionsService from './regions.service';
-angular.module('app.services').service('RegionsService', RegionsService);
-
 import RemoteService from './remote.service';
-angular.module('app.services').service('RemoteService', RemoteService);
+import localStorageConfig from './local-storage.config';
+
+angular.module('app.services', ['LocalStorageModule'])
+  .config(localStorageConfig)
+  .service('DungeonsService', DungeonsService)
+  .service('ItemsService', ItemsService)
+  .service('LocationsService', LocationsService)
+  .service('RegionsService', RegionsService)
+  .service('RemoteService', RemoteService);

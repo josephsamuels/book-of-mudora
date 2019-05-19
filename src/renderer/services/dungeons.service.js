@@ -1,30 +1,15 @@
+import angular from 'angular';
 import dungeons from './configs/dungeons';
 
 export default class DungeonsService {
-  constructor() {
-    this.dungeons = dungeons;
-  }
+  constructor(localStorageService) {
+    this._localStorageService = localStorageService;
 
-  /**
-   * Returns the dungeon's access requirements.
-   *
-   * @param {string} dungeon The dungeon's key.
-   *
-   * @returns {array|object}
-   */
-  getDungeonAccessRequirements(dungeon) {
-    return this.dungeons[dungeon].requiredToAccess || [];
-  }
+    this.dungeons = angular.copy(dungeons);
 
-  /**
-   * Returns the dungeon's clear requirements.
-   *
-   * @param {string} dungeon The dungeon's key.
-   *
-   * @returns {array|object}
-   */
-  getDungeonClearRequirements(dungeon) {
-    return this.dungeons[dungeon].requiredToClear;
+    if (this._localStorageService.get('dungeons')) {
+      this.dungeons = this._localStorageService.get('dungeons');
+    }
   }
 
   /**
@@ -90,6 +75,8 @@ export default class DungeonsService {
     if (this.dungeons[dungeon].items < 0) {
       this.dungeons[dungeon].items = this.dungeons[dungeon].maxItems;
     }
+
+    this.save();
   }
 
   /**
@@ -99,9 +86,36 @@ export default class DungeonsService {
    */
   toggleDungeonCleared(dungeon) {
     this.dungeons[dungeon].cleared = !!!this.dungeons[dungeon].cleared;
+
+    this.save();
   }
 
+  /**
+   * Increment the dungeons prize property.
+   * 
+   * @param {string} dungeon The dungeon's key.
+   */
   incrementDungeonPrize(dungeon) {
     this.dungeons[dungeon].prize = (this.dungeons[dungeon].prize + 1) % 5;
+
+    this.save();
+  }
+
+  /**
+   * Reset items to default.
+   */
+  reset() {
+    this.dungeons = angular.copy(dungeons);
+
+    this.save();
+  }
+
+  /**
+   * Persist changes to local storage.
+   */
+  save() {
+    this._localStorageService.set('dungeons', this.dungeons);
   }
 }
+
+DungeonsService.$inject = ['localStorageService'];

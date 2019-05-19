@@ -1,15 +1,14 @@
+// Load vendor packages.
 import angular from 'angular';
 
-angular.module('app.elements', []);
-
+// Load module packages.
 import dungeon from './dungeon';
-angular.module('app.elements').component('dungeon', dungeon);
-
 import dungeonGrid from './dungeon-grid';
-angular.module('app.elements').component('dungeonGrid', dungeonGrid);
-
 import item from './item';
-angular.module('app.elements').component('item', item);
-
 import itemGrid from './item-grid';
-angular.module('app.elements').component('itemGrid', itemGrid);
+
+angular.module('app.elements', [])
+  .component('dungeon', dungeon)
+  .component('dungeonGrid', dungeonGrid)
+  .component('item', item)
+  .component('itemGrid', itemGrid);

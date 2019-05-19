@@ -24,10 +24,11 @@ main {
   padding: 8px;
 }
 
-.btn-close {
-  opacity: 0;
+.btn-control {
+  opacity: 0.1;
+  width: 40px;
 }
 
-.btn-close:hover {
+.btn-control:hover {
   opacity: 1;
 }
