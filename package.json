@@ -14,13 +14,15 @@
   "dependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@fortawesome/fontawesome-free": "^5.8.1",
-    "angular": "^1.7.7",
+    "angular": "^1.7.8",
+    "angular-animate": "^1.7.8",
     "angular-local-storage": "^0.7.1",
     "bootstrap": "^4.3.1",
     "global": "^4.3.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
-    "source-map-support": "^0.5.10"
+    "source-map-support": "^0.5.10",
+    "ui-bootstrap4": "^3.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",

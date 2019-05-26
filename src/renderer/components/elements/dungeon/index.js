@@ -6,6 +6,7 @@ export default {
   bindings: {
     name: '@'
   },
+  el: 'dungeon',
   controller: DungeonController,
   template: template
 };

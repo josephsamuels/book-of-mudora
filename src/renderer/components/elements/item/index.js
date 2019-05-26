@@ -9,5 +9,6 @@ export default {
     showLevel: '<'
   },
   controller: ItemController,
+  el: 'item',
   template: template
 };

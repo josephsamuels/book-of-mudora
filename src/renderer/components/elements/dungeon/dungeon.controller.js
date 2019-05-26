@@ -1,4 +1,4 @@
-import DungeonsService from '../../services/dungeons.service';
+import DungeonsService from '../../../services/dungeons.service';
 
 export default class DungeonController {
 

@@ -4,5 +4,6 @@ import './main.styles.css';
 
 export default {
   controller: MainController,
+  el: 'main',
   template: template
 };

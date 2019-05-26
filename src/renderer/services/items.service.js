@@ -13,6 +13,15 @@ export default class ItemsService {
   }
 
   /**
+   * Returns true or false if this item is a medallion.
+   * 
+   * @param {String} type The item's type.
+   */
+  isMedallion(type) {
+    return !!this.items[type].isMedallion;
+  }
+
+  /**
    * Returns the item's dungeon requirement value.
    * 
    * @param {string} type The item's type.

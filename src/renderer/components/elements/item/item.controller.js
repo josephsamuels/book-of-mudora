@@ -1,4 +1,4 @@
-import ItemsService from "../../services/items.service";
+import ItemsService from "../../../services/items.service";
 
 export default class ItemController {
 
@@ -17,7 +17,7 @@ export default class ItemController {
   itemClicked(event) {
     if (event.which === 1) {
       this._ItemsService.incrementItemLevel(this.type);
-    } else if (event.which === 3 && this.isMedallion) {
+    } else if (event.which === 3 && this._ItemsService.isMedallion(this.type)) {
       this._ItemsService.incrementDungeonRequirement(this.type);
     }
   }

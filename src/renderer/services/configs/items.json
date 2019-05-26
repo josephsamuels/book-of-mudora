@@ -2,7 +2,9 @@
   "bomb": {
     "min": 1
   },
-  "bombos": {},
+  "bombos": {
+    "isMedallion": true
+  },
   "book": {},
   "boomerangs": {
     "max": 3
@@ -18,7 +20,9 @@
   "canes": {
     "max": 3
   },
-  "ether": {},
+  "ether": {
+    "isMedallion": true
+  },
   "flippers": {},
   "flute": {},
   "gloves": {
@@ -32,7 +36,9 @@
   "powder": {},
   "moon-pearl": {},
   "mushroom": {},
-  "quake": {},
+  "quake": {
+    "isMedallion": true
+  },
   "rods": {
     "max": 3
   },

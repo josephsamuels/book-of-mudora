@@ -3,12 +3,10 @@ import angular from 'angular';
 
 // Load module packages.
 import './app.styles.css';
-import './elements';
-import './services';
-import './views';
+import components from './components';
+import services from './services';
 
 angular.module('app', [
-  'app.elements',
-  'app.services',
-  'app.views'
+  components,
+  services
 ]);
