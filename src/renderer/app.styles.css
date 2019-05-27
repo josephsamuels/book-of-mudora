@@ -3,9 +3,3 @@ html, body {
   background-color: black;
 }
 
-.btn, .badge {
-  box-shadow: none !important;
-  border: 0;
-  border-radius: 0;
-  cursor: pointer;
-}

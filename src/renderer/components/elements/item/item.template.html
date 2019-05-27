@@ -3,15 +3,13 @@
   <div
     class="d-flex flex-column align-items-end item {{ $ctrl.type + '-' + $ctrl._ItemsService.getItemLevel($ctrl.type) }}"
     ng-class="{ 'unavailable': !$ctrl._ItemsService.getItemLevel($ctrl.type) }">
-    <div class="mt-auto w-100">
-      <div
-        ng-show="$ctrl._ItemsService.isMedallion($ctrl.type) && [1, 3].indexOf($ctrl._ItemsService.getItemDungeonRequirement($ctrl.type)) > -1"
+    <div ng-show="$ctrl._ItemsService.isMedallion($ctrl.type)" class="mt-auto w-100">
+      <div ng-show="[1, 3].indexOf($ctrl._ItemsService.getItemDungeonRequirement($ctrl.type)) > -1"
         class="badge badge-dark float-left w-50">MM</div>
-      <div
-        ng-show="$ctrl._ItemsService.isMedallion($ctrl.type) && $ctrl._ItemsService.getItemDungeonRequirement($ctrl.type) >= 2"
+      <div ng-show="$ctrl._ItemsService.getItemDungeonRequirement($ctrl.type) >= 2"
         class="badge badge-dark float-right w-50">TR</div>
     </div>
-    <div ng-if="$ctrl.showLevel" class="badge badge-dark">
+    <div ng-show="$ctrl._ItemsService.isProgressive($ctrl.type)" class="badge badge-dark">
       {{ $ctrl._ItemsService.getItemLevel($ctrl.type) }}
     </div>
   </div>

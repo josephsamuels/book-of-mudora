@@ -15,10 +15,10 @@ export default class ItemController {
    * @param {MouseEvent} event The triggering mouse event.
    */
   itemClicked(event) {
-    if (event.which === 1) {
-      this._ItemsService.incrementItemLevel(this.type);
-    } else if (event.which === 3 && this._ItemsService.isMedallion(this.type)) {
+    if (event.which === 3 && this._ItemsService.isMedallion(this.type)) {
       this._ItemsService.incrementDungeonRequirement(this.type);
+    } else {
+      this._ItemsService.incrementItemLevel(this.type);
     }
   }
 }

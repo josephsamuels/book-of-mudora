@@ -13,12 +13,21 @@ export default class ItemsService {
   }
 
   /**
-   * Returns true or false if this item is a medallion.
+   * Returns true if this item is a medallion.
    * 
    * @param {String} type The item's type.
    */
   isMedallion(type) {
     return !!this.items[type].isMedallion;
+  }
+
+  /**
+   * Returns true if this item is a progressive item.
+   * 
+   * @param {String} type The item's type.
+   */
+  isProgressive(type) {
+    return !!this.items[type].isProgressive;
   }
 
   /**
