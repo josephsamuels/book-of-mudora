@@ -1,0 +1,13 @@
+<div class="modal-header">
+  <h5 class="modal-title">Reset Items</h5>
+  <button type="button" class="close" aria-label="Cancel" ng-click="$ctrl.dismiss({$value: 'cancel'})">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  Are you sure you want to reset collected items?
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" ng-click="$ctrl.dismiss({$value: 'cancel'})">Cancel</button>
+  <button type="button" class="btn btn-danger" ng-click="$ctrl.close()">Reset</button>
+</div>
