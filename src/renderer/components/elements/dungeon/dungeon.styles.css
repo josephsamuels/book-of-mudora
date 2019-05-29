@@ -2,3 +2,36 @@ dungeon {
   width: 20%;
   float: left;
 }
+
+.prize, .treasure {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16px;
+  width: 16px;
+}
+
+.prize-0 {
+  width: 12px;
+  background-image: url('./images/blue-crystal.png');
+}
+
+.prize-1 {
+  width: 12px;
+  background-image: url('./images/red-crystal.png');
+}
+
+.prize-2 {
+  background-image: url('./images/blue-pendant.png');
+}
+
+.prize-3 {
+  background-image: url('./images/green-pendant.png');
+}
+
+.treasure-full {
+  background-image: url('./images/treasure-full.png');
+}
+
+.treasure-empty {
+  background-image: url('./images/treasure-empty.png');
+}

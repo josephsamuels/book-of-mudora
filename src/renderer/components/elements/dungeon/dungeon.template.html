@@ -1,11 +1,16 @@
 <div class="d-flex flex-column">
-  <div role="button" class="flex-fill btn btn-sm {{ $ctrl.getDungeonStatusClasses() }}"
+  <div role="button" class="flex-fill w-100 btn btn-sm {{ $ctrl.getDungeonStatusClasses() }}"
     ng-mousedown="$ctrl.dungeonClicked($event)">
-    {{ $ctrl._DungeonsService.getDungeonLabel($ctrl.name) }}
+    <div class="float-left font-weight-bold">{{ $ctrl._DungeonsService.getDungeonLabel($ctrl.name) }}</div>
+    <div class="float-right mt-1 prize prize-{{ $ctrl._DungeonsService.getDungeonPrize($ctrl.name) }}"></div>
   </div>
   <div class="d-flex">
-    <div role="button" class="btn btn-sm w-100 {{ $ctrl.getDungeonItemsClasses() }}"
+    <div role="button" class="btn btn-sm w-100 {{ $ctrl.getDungeonItemsClasses() }} font-weight-bold"
       ng-click="$ctrl._DungeonsService.decrementItemCount($ctrl.name)">
-      {{ $ctrl._DungeonsService.getDungeonItemCount($ctrl.name) }}</div>
+      <div class="float-left mt-1 treasure {{ $ctrl.getTreasureIconClass() }}"></div>
+      <div class="float-right font-weight-bold">
+        {{ $ctrl._DungeonsService.getDungeonItemCount($ctrl.name) }}
+      </div>
+    </div>
   </div>
 </div>

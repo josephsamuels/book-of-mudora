@@ -96,7 +96,7 @@ export default class DungeonsService {
    * @param {string} dungeon The dungeon's key.
    */
   incrementDungeonPrize(dungeon) {
-    this.dungeons[dungeon].prize = (this.dungeons[dungeon].prize + 1) % 5;
+    this.dungeons[dungeon].prize = (this.dungeons[dungeon].prize + 1) % 4;
 
     this.save();
   }

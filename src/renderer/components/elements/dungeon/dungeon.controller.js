@@ -24,15 +24,22 @@ export default class DungeonController {
 
     switch (this._DungeonsService.getDungeonPrize(this.name)) {
       case 1:
-        return 'btn-primary';
-      case 2:
-        return 'btn-success';
-      case 3:
-        return 'btn-info';
-      case 4:
         return 'btn-danger';
+      case 2:
+        return 'btn-primary';
+      case 3:
+        return 'btn-success';
       default:
-        return 'btn-secondary';
+        return 'btn-info';
+    }
+  }
+
+  getTreasureIconClass() {
+    switch (this._DungeonsService.getDungeonItemCount(this.name)) {
+      case 0:
+        return 'treasure-empty';
+      default:
+        return 'treasure-full';
     }
   }
 
